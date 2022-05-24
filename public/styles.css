@@ -1,0 +1,27 @@
+html {
+    font-family: 'Rubik', arial, serif;
+}
+
+body {
+    margin: 0;
+}
+
+.text-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        flex-direction: column-reverse;
+        padding: 0 32px;
+    }
+}
