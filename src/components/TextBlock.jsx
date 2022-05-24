@@ -43,14 +43,14 @@ function TextBlock() {
 
     const age = getAge()
 
-    return <div className="text-block">
+    return (<div className="text-block">
         <NameHeader>Marcin Bartmiński</NameHeader>
         <Title>{selectedTitle}</Title>
         <Description>
             Hey <Wave>👋</Wave> <br />
             My name is Marcin and I'm {getArticle(age)} {age} year old beginner iOS app developer from Poland. I'm currently studying IT at High School in Poznań.
         </Description>
-    </div>
+    </div>)
 }
 
 export default TextBlock
