@@ -8,6 +8,10 @@ const NameHeader = styled.h1`
   font-weight: 700;
   line-height: 1;
   margin: 0px;
+
+  @media (prefers-color-scheme: dark) {
+    color: white;
+  }
 `;
 
 const Title = styled.p`
@@ -19,6 +23,10 @@ const Title = styled.p`
 const Description = styled.p`
   color: rgba(40, 45, 52, 1);
   max-width: 30rem;
+
+  @media (prefers-color-scheme: dark) {
+    color: white;
+  }
 `;
 
 function getAge() {

@@ -25,3 +25,9 @@ body {
     padding: 0 32px;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: rgb(22, 25, 29);
+  }
+}
