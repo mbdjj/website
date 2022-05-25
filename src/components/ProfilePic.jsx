@@ -11,7 +11,13 @@ const ProfilePic = styled.img`
   margin-bottom: 24px;
 
   &:hover {
-    box-shadow: 0 2px 40px -4px #888;
+    box-shadow: 0 0 10px 0 rgb(22, 25, 29);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    &:hover {
+      box-shadow: 0 0 10px 0 snow;
+    }
   }
 `;
 
