@@ -6,6 +6,22 @@ body {
   margin: 0;
 }
 
+nav {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  padding: 24px;
+  width: calc(100vw - 48px);
+}
+
+.app {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: flex-start;
+}
+
 .text-block {
   display: flex;
   flex-direction: column;
@@ -15,14 +31,16 @@ body {
   align-items: center;
   display: flex;
   flex-direction: row;
-  height: 100vh;
   justify-content: center;
+  margin: auto;
+  margin-top: calc(50vh - 92px - 89px);
 }
 
 @media screen and (max-width: 800px) {
   .container {
     flex-direction: column-reverse;
     padding: 0 32px;
+    margin-top: calc(50vh - 165px - 89px);
   }
 }
 
