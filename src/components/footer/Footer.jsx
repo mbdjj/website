@@ -1,10 +1,10 @@
 function Footer() {
+  const date = new Date();
+  var years = 2022;
+  const currentYear = date.getFullYear();
 
-  const date = new Date()
-  var years = 2022
-
-  if (date.getFullYear() != years) {
-    years += `-${date.getFullYear()}`
+  if (currentYear != years) {
+    years += `-${currentYear}`;
   }
 
   return (

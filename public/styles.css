@@ -6,6 +6,10 @@ body {
   margin: 0;
 }
 
+a {
+  color: inherit;
+}
+
 nav {
   align-items: flex-start;
   display: flex;
@@ -36,25 +40,36 @@ footer {
   flex-direction: column;
 }
 
+.social-links {
+  display: flex;
+  flex-direction: row;
+  color: rgb(22, 25, 29);
+}
+
 .container {
   align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: auto;
-  margin-top: calc(50vh - 92px - 89px);
+  margin-top: calc(50vh - 111px - 89px);
 }
 
 @media screen and (max-width: 800px) {
   .container {
+    align-items: flex-start;
     flex-direction: column-reverse;
     padding: 0 32px;
-    margin-top: calc(50vh - 165px - 89px);
+    margin-top: calc(50vh - 187px - 89px);
   }
 }
 
 @media (prefers-color-scheme: dark) {
   html {
     background-color: rgb(22, 25, 29);
+  }
+
+  .social-links {
+    color: white;
   }
 }

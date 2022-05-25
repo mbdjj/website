@@ -1,6 +1,11 @@
 import styled from "@emotion/styled";
 
 import Wave from "./Wave";
+import Button from "./navbar/Button";
+
+import {ReactComponent as GitHub} from "../images/icons/github.svg";
+import {ReactComponent as LinkedIn} from "../images/icons/linkedin.svg";
+import {ReactComponent as Twitter} from "../images/icons/twitter.svg";
 
 const NameHeader = styled.h1`
   color: rgba(40, 45, 52, 1);
@@ -60,6 +65,23 @@ function TextBlock() {
         app developer from Poland. I'm currently studying IT at High School in
         Poznań.
       </Description>
+      <div className="social-links">
+        <a href="https://github.com/mbdjj">
+          <Button>
+            <GitHub height="22px" />
+          </Button>
+        </a>
+        <a href="https://www.linkedin.com/in/marcin-bartmiński-521a971a1/">
+          <Button>
+            <LinkedIn height="22px" />
+          </Button>
+        </a>
+        <a href="https://twitter.com/bartmisnki">
+          <Button>
+            <Twitter height="22px" />
+          </Button>
+        </a>
+      </div>
     </div>
   );
 }

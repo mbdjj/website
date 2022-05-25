@@ -7,17 +7,22 @@ const Button = styled.button`
   cursor: pointer;
   font-weight: 700;
   height: 44px;
-  transition: box-shadow 0.3s;
+  margin-right: 16px;
   padding: 11px;
+  transition: box-shadow 0.3s;
   width: max-content;
 
   &:hover {
-    box-shadow: 0 2px 40px -4px #555;
+    box-shadow: 0 2px 40px -4px rgb(22, 25, 29);;
   }
 
   @media (prefers-color-scheme: dark) {
     background-color: rgb(42, 45, 49);
     color: #ffffff;
+    
+    &:hover {
+      box-shadow: 0 2px 40px -4px snow;
+    }
   }
 `;
 
