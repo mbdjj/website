@@ -1,7 +1,15 @@
 function Footer() {
+
+  const date = new Date()
+  var years = 2022
+
+  if (date.getFullYear() != years) {
+    years += `-${date.getFullYear()}`
+  }
+
   return (
     <footer>
-      <p>© Marcin Bartmiński 2022</p>
+      <p>© Marcin Bartmiński {years}</p>
     </footer>
   );
 }
