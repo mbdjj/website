@@ -12,6 +12,7 @@ function NavBar() {
           <img src={memoji} height={"22px"}></img>
         </Button>
       </a>
+      <Button>Projects</Button>
     </nav>
   );
 }
