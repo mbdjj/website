@@ -14,7 +14,9 @@ a {
 }
 
 nav {
+  -webkit-backdrop-filter: blur(10px);
   align-items: flex-start;
+  backdrop-filter: blur(10px);
   display: flex;
   flex-direction: row;
   padding: 24px;
