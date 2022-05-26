@@ -49,7 +49,7 @@ function getArticle(age) {
 }
 
 function TextBlock() {
-  const titleArray = ["iOS app developer", "loved boyfriend", "IT student"];
+  const titleArray = ["iOS app developer", "loved boyfriend", "IT student", "Yu-Gi-Oh duelist", "Rocket League player", "SwiftUI enthusiast", "Creator of this website"];
   const randomIndex = Math.floor(Math.random() * titleArray.length);
   const selectedTitle = titleArray[randomIndex];
 
