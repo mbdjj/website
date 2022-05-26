@@ -1,5 +1,6 @@
 html {
   font-family: "Rubik", arial, serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -8,6 +9,7 @@ body {
 
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 nav {
@@ -15,6 +17,8 @@ nav {
   display: flex;
   flex-direction: row;
   padding: 24px;
+  position: sticky;
+  top: 0;
   width: calc(100vw - 48px);
 }
 
@@ -27,11 +31,64 @@ footer {
   width: 100vw;
 }
 
+#projects {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  margin-top: 20px;
+  max-width: 50rem;
+}
+
+.card {
+  background-color: #f8f8f8;
+  border: 0;
+  border-radius: 10px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  transition: box-shadow 0.3s;
+  width: 21rem;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px 0 rgb(22, 25, 29);
+}
+
+.repo-bar {
+  display: flex;
+  flex-direction: row;
+  height: min-content;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.repo-language {
+  align-items: center;
+  display: flex;
+}
+
+.repo-language div {
+  border-radius: 50%;
+  height: 0.7rem;
+  width: 0.7rem;
+  margin-right: 0.4rem;
+}
+
+.repo-stats {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
 .app {
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 200vh;
   justify-content: flex-start;
 }
 
@@ -53,6 +110,7 @@ footer {
   justify-content: center;
   margin: auto;
   margin-top: calc(50vh - 111px - 89px);
+  margin-bottom: calc(50vh - 111px);
 }
 
 @media screen and (max-width: 800px) {
@@ -61,15 +119,26 @@ footer {
     flex-direction: column-reverse;
     padding: 0 32px;
     margin-top: calc(50vh - 187px - 89px);
+    margin-bottom: calc(50vh - 187px);
   }
 }
 
 @media (prefers-color-scheme: dark) {
   html {
     background-color: rgb(22, 25, 29);
+    color: #ffffff;
   }
 
   .social-links {
     color: white;
+  }
+
+  .card {
+    background-color: rgb(42, 45, 49);
+    color: #ffffff;
+  }
+
+  .card:hover {
+    box-shadow: 0 0 10px 0 snow;
   }
 }

@@ -4,15 +4,14 @@ import memoji from "../../images/memoji.png";
 function NavBar() {
   return (
     <nav>
-      <a
-        href="https://bartminski.ga"
-        style={{ textDecoration: "none" }}
-      >
+      <a href="#">
         <Button>
           <img src={memoji} height={"22px"}></img>
         </Button>
       </a>
-      <Button>Projects</Button>
+      <a href="#projects">
+        <Button>Projects</Button>
+      </a>
     </nav>
   );
 }
