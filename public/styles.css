@@ -121,6 +121,16 @@ footer {
     margin-top: calc(50vh - 187px - 89px);
     margin-bottom: calc(50vh - 187px);
   }
+
+  .card {
+    width: 18rem;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .card {
+    width: 14rem;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
