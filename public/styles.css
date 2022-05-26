@@ -1,6 +1,6 @@
 html {
   font-family: "Rubik", arial, serif;
-  overflow: hidden;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
