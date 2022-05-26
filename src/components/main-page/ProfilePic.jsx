@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import me from "../images/marcin.jpg";
+import me from "../../images/marcin.jpg";
 
 const ProfilePic = styled.img`
   border-radius: 50%;

@@ -1,11 +1,11 @@
 import styled from "@emotion/styled";
 
 import Wave from "./Wave";
-import Button from "./navbar/Button";
+import Button from "../navbar/Button";
 
-import {ReactComponent as GitHub} from "../images/icons/github.svg";
-import {ReactComponent as LinkedIn} from "../images/icons/linkedin.svg";
-import {ReactComponent as Twitter} from "../images/icons/twitter.svg";
+import {ReactComponent as GitHub} from "../../images/icons/github.svg";
+import {ReactComponent as LinkedIn} from "../../images/icons/linkedin.svg";
+import {ReactComponent as Twitter} from "../../images/icons/twitter.svg";
 
 const NameHeader = styled.h1`
   color: rgba(40, 45, 52, 1);
