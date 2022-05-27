@@ -9,7 +9,7 @@ const fetchPinned = async () => {
 };
 
 const usePinned = () => {
-  const [pinned, setPinned] = useState(new Array(6).fill({}));
+  const [pinned, setPinned] = useState(new Array(0).fill({}));
 
   useEffect(() => {
     fetchPinned().then(setPinned);
