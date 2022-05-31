@@ -106,6 +106,10 @@ footer {
   color: rgb(22, 25, 29);
 }
 
+.social-links a button:hover {
+  transform: rotate(10deg);
+}
+
 .container {
   align-items: center;
   display: flex;

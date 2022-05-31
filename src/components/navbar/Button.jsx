@@ -10,7 +10,7 @@ const Button = styled.button`
   height: 44px;
   margin-right: 10px;
   padding: 11px;
-  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, transform 0.3s;
   width: max-content;
 
   &:hover {
