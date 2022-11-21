@@ -3,9 +3,9 @@ import styled from "@emotion/styled";
 import Wave from "./Wave";
 import Button from "../navbar/Button";
 
-import {ReactComponent as GitHub} from "../../images/icons/github.svg";
-import {ReactComponent as LinkedIn} from "../../images/icons/linkedin.svg";
-import {ReactComponent as Twitter} from "../../images/icons/twitter.svg";
+import { ReactComponent as GitHub } from "../../images/icons/github.svg";
+import { ReactComponent as LinkedIn } from "../../images/icons/linkedin.svg";
+import { ReactComponent as Twitter } from "../../images/icons/twitter.svg";
 
 const NameHeader = styled.h1`
   color: rgba(40, 45, 52, 1);
@@ -48,10 +48,25 @@ function getArticle(age) {
   return [8, 11, 18].includes(age) ? "an" : "a";
 }
 
-function TextBlock() {
-  const titleArray = ["iOS app developer", "loved boyfriend", "IT student", "Yu-Gi-Oh duelist", "Rocket League player", "SwiftUI enthusiast", "Creator of this website"];
+function getTitle() {
+  const titleArray = [
+    "iOS app developer",
+    "loved boyfriend",
+    "IT student",
+    "Yu-Gi-Oh duelist",
+    "Rocket League player",
+    "SwiftUI enthusiast",
+    "Creator of this website",
+    "Walut's creator",
+    "Apple Developer Program member",
+    "マチン・バートミスキ",
+  ];
   const randomIndex = Math.floor(Math.random() * titleArray.length);
-  const selectedTitle = titleArray[randomIndex];
+  return titleArray[randomIndex];
+}
+
+function TextBlock() {
+  const selectedTitle = getTitle();
 
   const age = getAge();
 
@@ -61,8 +76,8 @@ function TextBlock() {
       <Title>{selectedTitle}</Title>
       <Description>
         Hey <Wave>👋</Wave> <br />
-        My name is Marcin and I'm {getArticle(age)} {age} year old beginner iOS
-        app developer from Poland. I'm currently studying IT at High School in
+        My name is Marcin and I'm {getArticle(age)} {age} year old iOS app
+        developer from Poland. I'm currently studying IT at High School in
         Poznań.
       </Description>
       <div className="social-links">
