@@ -4,6 +4,6 @@
 
 Hello I'm Marcin.
 
-This is my first website written in React.
+This is my first website written in React and NextJS.
 
 Enjoy!
