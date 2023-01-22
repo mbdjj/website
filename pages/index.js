@@ -1,21 +1,21 @@
-import NavBar from "../components/navbar/NavBar";
-import Container from "../components/main-page/Container";
-import Footer from "../components/footer/Footer";
-import Projects from "../components/projects/Projects";
-import Head from "next/head";
+import Head from 'next/head'
+//import Image from 'next/image'
+//import { Inter } from '@next/font/google'
+import styles from '../styles/Home.module.css'
+import NavBar from '../components/navbar/NavBar'
 
-export default function App() {
+//const inter = Inter({ subsets: ['latin'] })
+
+export default function Home() {
   return (
-    <div className="app">
+    <>
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Marcin Bartmiński</title>
+        <meta name="description" content="My personal portfolio website." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
-      <NavBar />
-      <Container />
-      <h2 style={{ marginTop: "auto" }}>Pinned GitHub projects</h2>
-      <Projects />
-      <Footer />
-    </div>
-  );
+      
+    </>
+  )
 }

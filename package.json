@@ -1,41 +1,19 @@
 {
-  "name": "react-website",
+  "name": "website",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@emotion/css": "^11.10.5",
-    "@emotion/react": "^11.9.0",
-    "@emotion/server": "^11.10.0",
-    "@emotion/styled": "^11.8.1",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.2.0",
-    "@testing-library/user-event": "^13.5.0",
-    "next": "^13.1.1",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "web-vitals": "^2.1.4"
-  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "@next/font": "13.1.1",
+    "eslint": "8.31.0",
+    "eslint-config-next": "13.1.1",
+    "next": "13.1.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   }
 }
