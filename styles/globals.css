@@ -1,0 +1,73 @@
+h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -1px;
+  line-height: 1.2em;
+  text-align: start;
+  color: #282C34;
+  text-decoration: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 1.6em;
+  text-align: start;
+  color: #444444;
+  text-decoration: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+p.caption {
+  font-size: 14px;
+  line-height: 1em;
+  color: #999999;
+}
+
+a.navLink {
+  text-decoration: none;
+  color: #999999;
+}
+
+a.navLink:hover {
+  text-decoration: underline;
+}
+
+a.navLink.selected {
+  color: #444444;
+}
+
+a.inlineLink {
+  text-decoration: none;
+  color: #0099ff;
+}
+
+a.inlineLink:hover {
+  text-decoration: underline;
+  color: #0088ff;
+}
+
+nav {
+  place-content: center flex-start;
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-flow: row nowrap;
+  gap: 15px;
+  height: min-content;
+  overflow: visible;
+  padding: 0;
+  position: relative;
+  width: max-content;
+  box-sizing: border-box;
+}

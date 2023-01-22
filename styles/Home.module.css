@@ -1,0 +1,101 @@
+.websiteContainer {
+  place-content: center flex;
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0px;
+  height: min-content;
+  overflow: hidden;
+  min-height: 100%;
+  width: auto;
+  padding: 80px;
+  position: relative;
+}
+
+.contentContainer {
+  place-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-flow: column nowrap;
+  gap: 40px;
+  height: min-content;
+  max-width: 100%;
+  padding: 0px;
+  position: relative;
+  width: 600px;
+  box-sizing: border-box;
+}
+
+.nav {
+  flex: 0 0 auto;
+  height: auto;
+  position: relative;
+  width: 100%;
+}
+
+.navContainer {
+  place-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+  height: min-content;
+  overflow: visible;
+  padding: 0px;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.avatarLinkDiv {
+  flex: 0 0 auto;
+  height: auto;
+  position: relative;
+  width: auto;
+}
+
+.avatarLink {
+  border-radius: 24px;
+  box-sizing: border-box;
+  display: block;
+  height: 48px;
+  overflow: visible;
+  text-decoration: none;
+  width: 48px;
+}
+
+.avatarDiv {
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+  border-radius: inherit;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.avatarImage {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: inherit;
+  object-position: center;
+  object-fit: cover;
+  image-rendering: auto;
+}
+
+.titleDiv {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.line {
+  background-color: #EEEEEE;
+  flex: 0 0 auto;
+  height: 1px;
+  overflow: visible;
+  position: relative;
+  width: 100%;
+}
