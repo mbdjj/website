@@ -31,27 +31,18 @@ export default function Home() {
                     <a className='navLink selected' href='./'>About me</a>
                   </p>
                 </div>
-                {/*<div>
-                  <p>
-                    <a className='navLink' href='./'>Projects</a>
-                  </p>
-                </div>
-                <div>
-                  <p>
-                    <a className='navLink' href='./'>Photos</a>
-                  </p>
-                </div>*/}
+
               </nav>
             </div>
           </div>
           <div className={styles.line}></div>
           <div>
             <p>
-              Hello! I'm Marcin, an iOS Developer and <a className='inlineLink' href='https://zsk.poznan.pl' target="_blank">ZSK</a> student.
+              Hello! I&apos;m Marcin, an iOS Developer and <a className='inlineLink' href='https://zsk.poznan.pl' target="_blank" rel="noreferrer">ZSK</a> student.
               In my free time I play video games, code, and watch movies.
-              You can follow me on <a className='inlineLink' href='https://twitter.com/bartmisnki' target="_blank">Twitter</a>, 
-              check out my projects on <a className='inlineLink' href='https://github.com/mbdjj' target="_blank">GitHub</a>, 
-              or send me an <a className='inlineLink' href='mailto:marcin@bartminski.ga' target="_blank">Email</a>.
+              You can follow me on <a className='inlineLink' href='https://twitter.com/bartmisnki' target="_blank" rel="noreferrer">Twitter</a>, 
+              check out my projects on <a className='inlineLink' href='https://github.com/mbdjj' target="_blank" rel="noreferrer">GitHub</a>, 
+              or send me an <a className='inlineLink' href='mailto:marcin@bartminski.ga'>Email</a>.
             </p>
           </div>
         </div>
