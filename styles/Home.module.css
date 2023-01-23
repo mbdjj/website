@@ -142,3 +142,9 @@
     padding: 20px;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .line {
+    background-color: #444444;
+  }
+}

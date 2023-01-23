@@ -76,3 +76,22 @@ nav {
   width: max-content;
   box-sizing: border-box;
 }
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: #16191D;
+    color: #FFFFFF;
+  }
+
+  h1 {
+    color: #d5dae5;
+  }
+
+  p {
+    color: #d5dae5;
+  }
+
+  a.navLink.selected {
+    color: #CCCCCC;
+  }
+}
