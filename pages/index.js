@@ -86,7 +86,7 @@ export default function Home() {
               <div className={styles.titleDiv}>
                 <h1>Marcin Bartmiński</h1>
                 <p className="caption" ref={captionRef} onClick={changeTitle}>
-                  {title}
+                  {title || "..."}
                 </p>
               </div>
               <nav>
