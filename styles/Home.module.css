@@ -130,3 +130,15 @@
     transform: translate(0, -16px);
   }
 }
+
+@media (min-width: 810px) and (max-width: 999px) {
+  .websiteContainer {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 809px) {
+  .websiteContainer {
+    padding: 20px;
+  }
+}
