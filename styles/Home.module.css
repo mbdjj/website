@@ -117,3 +117,16 @@
   object-fit: cover;
   image-rendering: auto;
 }
+
+.animateTitle {
+  opacity: 1;
+  animation-name: slide;
+  animation-duration: 250ms;
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translate(0, -16px);
+  }
+}
