@@ -45,6 +45,9 @@ export default function Home() {
               or send me an <a className='inlineLink' href='mailto:marcin@bartminski.ga'>Email</a>.
             </p>
           </div>
+          <div className={styles.photoDiv}>
+            <img className={styles.photoImage} src='/images/marcin.jpeg' />
+          </div>
         </div>
       </div>
     </>
