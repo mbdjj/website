@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Image from 'next/image'
+import marcinPhoto from '../public/images/marcin.jpeg'
 
 export default function Home() {
   return (
@@ -46,7 +48,7 @@ export default function Home() {
             </p>
           </div>
           <div className={styles.photoDiv}>
-            <img className={styles.photoImage} src='/images/marcin.jpeg' />
+            <Image src={marcinPhoto} placeholder="blur" className={styles.photoImage} />
           </div>
         </div>
       </div>
