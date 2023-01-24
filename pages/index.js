@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
+import Link from "next/link";
 import marcinPhoto from "../public/images/marcin.jpeg";
 import { useState, useEffect, useRef } from "react";
 
@@ -79,14 +80,14 @@ export default function Home() {
           <div className={styles.nav}>
             <div className={styles.navContainer}>
               <div className={styles.avatarLinkDiv}>
-                <a href="./" className={styles.avatarLink}>
+                <Link href="/" className={styles.avatarLink}>
                   <div className={styles.avatarDiv}>
                     <img
                       src="images/memoji.png"
                       className={styles.avatarImage}
                     />
                   </div>
-                </a>
+                </Link>
               </div>
               <div className={styles.titleDiv}>
                 <h1>Marcin Bartmiński</h1>
@@ -97,9 +98,9 @@ export default function Home() {
               <nav>
                 <div>
                   <p>
-                    <a className="navLink selected" href="./">
+                    <Link className="navLink selected" href="/">
                       About me
-                    </a>
+                    </Link>
                   </p>
                 </div>
               </nav>
