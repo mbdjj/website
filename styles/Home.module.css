@@ -25,6 +25,9 @@
   position: relative;
   width: 600px;
   box-sizing: border-box;
+
+  animation-name: wzium;
+  animation-duration: 0.5s;
 }
 
 .nav {
@@ -128,6 +131,17 @@
   from {
     opacity: 0;
     transform: translate(0, -16px);
+  }
+}
+
+@keyframes wzium {
+  from {
+    opacity: 0;
+    transform: rotate(-1deg) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
   }
 }
 
