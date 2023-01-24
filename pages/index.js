@@ -42,6 +42,11 @@ export default function Home() {
 
   useEffect(() => {
     setTitle(getTitle());
+    captionRef.current.classList.add(styles.animateTitle);
+    captionRef.current.classList.add('captionDoneLoading');
+    setTimeout(() => {
+      captionRef.current.classList.remove(styles.animateTitle);
+    }, 250);
   }, []);
 
   const changeTitle = () => {
@@ -86,7 +91,7 @@ export default function Home() {
               <div className={styles.titleDiv}>
                 <h1>Marcin Bartmiński</h1>
                 <p className="caption" ref={captionRef} onClick={changeTitle}>
-                  {title}
+                  {title || "..."}
                 </p>
               </div>
               <nav>
