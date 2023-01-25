@@ -36,6 +36,12 @@ function getTitle() {
   return titleArray[randomIndex];
 }
 
+function getCurrentYear() {
+  const today = new Date();
+
+  return today.getFullYear();
+}
+
 export default function Home() {
   const [title, setTitle] = useState("");
   const age = getAge();
@@ -153,6 +159,10 @@ export default function Home() {
               className={styles.photoImage}
             />
           </div>
+          <div className={styles.line}></div>
+          <footer>
+            <p>© Marcin Bartmiński 2022-{getCurrentYear()}</p>
+          </footer>
         </div>
       </div>
     </>
