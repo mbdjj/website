@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import marcinPhoto from "../public/images/marcin.jpeg";
 import { useState, useEffect, useRef } from "react";
+import Tilt from "react-parallax-tilt";
 
 function getAge() {
   const today = new Date();
@@ -151,14 +152,14 @@ export default function Home() {
               .
             </p>
           </div>
-          <div className={styles.photoDiv}>
+          <Tilt className={styles.photoDiv} tiltMaxAngleX="5" tiltMaxAngleY="5">
             <Image
               src={marcinPhoto}
               alt="Marcin in park chilling."
               placeholder="blur"
               className={styles.photoImage}
             />
-          </div>
+          </Tilt>
           <div className={styles.line}></div>
           <footer>
             <p>© Marcin Bartmiński 2022-{getCurrentYear()}</p>
