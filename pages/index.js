@@ -90,7 +90,7 @@ export default function Home() {
                 <Link href="/" className={styles.avatarLink}>
                   <div className={styles.avatarDiv}>
                     <img
-                      src="images/memoji.png"
+                      src="images/nft-avatar.png"
                       className={styles.avatarImage}
                     />
                   </div>
