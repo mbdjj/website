@@ -104,13 +104,18 @@
 }
 
 .photoDiv {
-  border-radius: 6px;
+  border-radius: 8px;
   flex: 0 0 auto;
   height: 300px;
   overflow: hidden;
   position: relative;
   width: 100%;
+  transition: scale 0.5s;
   will-change: transform;
+}
+
+.photoDiv:hover {
+  scale: 1.05;
 }
 
 .photoImage {
