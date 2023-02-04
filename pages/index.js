@@ -1,10 +1,9 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
-import Link from "next/link";
 import marcinPhoto from "../public/images/marcin.jpeg";
-import { useState, useEffect, useRef } from "react";
 import Tilt from "react-parallax-tilt";
+import Nav from "../components/Nav/Nav";
 
 function getAge() {
   const today = new Date();
@@ -20,23 +19,6 @@ function getArticle(age) {
   return [8, 11, 18].includes(age) ? "an" : "a";
 }
 
-function getTitle() {
-  const titleArray = [
-    "iOS app developer",
-    "loved boyfriend",
-    "IT student",
-    "Yu-Gi-Oh duelist",
-    "Rocket League player",
-    "SwiftUI enthusiast",
-    "Creator of this website",
-    "Walut's creator",
-    "Apple Developer Program member",
-    "マチン・バートミスキ",
-  ];
-  const randomIndex = Math.floor(Math.random() * titleArray.length);
-  return titleArray[randomIndex];
-}
-
 function getCurrentYear() {
   const today = new Date();
 
@@ -44,35 +26,7 @@ function getCurrentYear() {
 }
 
 export default function Home() {
-  const [title, setTitle] = useState("");
   const age = getAge();
-  const captionRef = useRef(null);
-
-  useEffect(() => {
-    setTitle(getTitle());
-    captionRef.current.classList.add(styles.animateTitle);
-    captionRef.current.classList.add('captionDoneLoading');
-    setTimeout(() => {
-      captionRef.current.classList.remove(styles.animateTitle);
-    }, 250);
-  }, []);
-
-  const changeTitle = () => {
-    var timeout = null;
-
-    const prevTitle = title;
-    const newTitle = getTitle();
-
-    if (prevTitle != newTitle) {
-      setTitle(newTitle);
-      captionRef.current.classList.add(styles.animateTitle);
-      timeout = setTimeout(() => {
-        captionRef.current.classList.remove(styles.animateTitle);
-      }, 250);
-    } else {
-      changeTitle();
-    }
-  };
 
   return (
     <>
@@ -84,42 +38,7 @@ export default function Home() {
       </Head>
       <div className={styles.websiteContainer}>
         <div className={styles.contentContainer}>
-          <div className={styles.nav}>
-            <div className={styles.navContainer}>
-              <div className={styles.avatarLinkDiv}>
-                <Link href="/" className={styles.avatarLink}>
-                  <div className={styles.avatarDiv}>
-                    <img
-                      src="images/nft-avatar.png"
-                      className={styles.avatarImage}
-                    />
-                  </div>
-                </Link>
-              </div>
-              <div className={styles.titleDiv}>
-                <h1>Marcin Bartmiński</h1>
-                <p className="caption" ref={captionRef} onClick={changeTitle}>
-                  {title || "..."}
-                </p>
-              </div>
-              <nav>
-                <div>
-                  <p>
-                    <Link className="navLink selected" href="/">
-                      About me
-                    </Link>
-                  </p>
-                </div>
-                <div>
-                  <p>
-                    <Link className="navLink" href="/projects">
-                      Projects
-                    </Link>
-                  </p>
-                </div>
-              </nav>
-            </div>
-          </div>
+          <Nav selectedItem="index" />
           <div className={styles.line}></div>
           <div>
             <p>

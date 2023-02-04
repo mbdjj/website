@@ -67,6 +67,15 @@ a.inlineLink:hover {
   color: #0088ff;
 }
 
+.line {
+  background-color: #EEEEEE;
+  flex: 0 0 auto;
+  height: 1px;
+  overflow: visible;
+  position: relative;
+  width: 100%;
+}
+
 nav {
   place-content: center flex-start;
   align-items: center;
@@ -106,5 +115,9 @@ footer {
 
   a.navLink.selected {
     color: #CCCCCC;
+  }
+
+  .line {
+    background-color: #444444;
   }
 }
