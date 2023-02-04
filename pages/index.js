@@ -41,7 +41,7 @@ export default function Home() {
       
       <SiteLayout>
         <Nav selectedItem="index" />
-          <div className={styles.line}></div>
+          <div className="line"></div>
           <div>
             <p>
               Hello! I&apos;m Marcin, {getArticle(age)} {age} year old iOS
