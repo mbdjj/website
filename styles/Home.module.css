@@ -1,35 +1,3 @@
-.websiteContainer {
-  place-content: center flex;
-  align-items: center;
-  display: flex;
-  flex-flow: column nowrap;
-  gap: 0px;
-  height: min-content;
-  overflow: hidden;
-  min-height: 100%;
-  width: auto;
-  padding: 80px;
-  position: relative;
-}
-
-.contentContainer {
-  place-content: flex-start;
-  align-items: flex-start;
-  display: flex;
-  flex: 0 0 auto;
-  flex-flow: column nowrap;
-  gap: 40px;
-  height: min-content;
-  max-width: 100%;
-  padding: 0px;
-  position: relative;
-  width: 600px;
-  box-sizing: border-box;
-
-  animation-name: wzium;
-  animation-duration: 0.5s;
-}
-
 .photoDiv {
   border-radius: 8px;
   flex: 0 0 auto;
@@ -51,28 +19,5 @@
   object-position: center;
   object-fit: cover;
   image-rendering: auto;
-}
-
-@keyframes wzium {
-  from {
-    opacity: 0;
-    transform: rotate(-1deg) scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: rotate(0deg) scale(1);
-  }
-}
-
-@media (min-width: 810px) and (max-width: 999px) {
-  .websiteContainer {
-    padding: 40px;
-  }
-}
-
-@media (max-width: 809px) {
-  .websiteContainer {
-    padding: 20px;
-  }
 }
 

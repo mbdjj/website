@@ -3,7 +3,9 @@ import styles from "../styles/Home.module.css";
 import Image from "next/image";
 import marcinPhoto from "../public/images/marcin.jpeg";
 import Tilt from "react-parallax-tilt";
+
 import Nav from "../components/Nav/Nav";
+import SiteLayout from "../components/SiteLayout/SiteLayout";
 
 function getAge() {
   const today = new Date();
@@ -36,9 +38,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <div className={styles.websiteContainer}>
-        <div className={styles.contentContainer}>
-          <Nav selectedItem="index" />
+      
+      <SiteLayout>
+        <Nav selectedItem="index" />
           <div className={styles.line}></div>
           <div>
             <p>
@@ -90,8 +92,7 @@ export default function Home() {
           <footer>
             <p>© Marcin Bartmiński 2022-{getCurrentYear()}</p>
           </footer>
-        </div>
-      </div>
+      </SiteLayout>
     </>
   );
 }
