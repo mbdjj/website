@@ -110,6 +110,13 @@ export default function Home() {
                     </Link>
                   </p>
                 </div>
+                <div>
+                  <p>
+                    <Link className="navLink" href="/projects">
+                      Projects
+                    </Link>
+                  </p>
+                </div>
               </nav>
             </div>
           </div>

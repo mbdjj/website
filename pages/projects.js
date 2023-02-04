@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Construction from "../components/Construction/Construction";
 
 export default function Projects() {
   return (
@@ -9,9 +10,7 @@ export default function Projects() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <div>
-        <h1>This page is under construction.</h1>
-      </div>
+      <Construction />
     </>
   );
 }
