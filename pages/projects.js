@@ -34,9 +34,9 @@ export default function Projects() {
         <Nav selectedItem="projects" />
         <div className="line"></div>
 
-        {projects.map((project) => {
+        {projects.map((project, index) => {
           return (
-            <div>
+            <div key={index}>
               <h2>{projects[0].name}</h2>
               <p>{projects[0].category}</p>
               <p>{projects[0].state}</p>
