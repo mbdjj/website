@@ -17,6 +17,20 @@ h1 {
   padding: 0;
 }
 
+h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: start;
+  color: #282c34;
+  text-decoration: none;
+
+  margin: 0;
+  padding: 0;
+}
+
 p {
   font-family: "Rubik", sans-serif;
   font-size: 16px;
@@ -107,6 +121,10 @@ footer {
 
   h1 {
     color: #d5dae5;
+  }
+
+  h2 {
+    color: #d5dae5
   }
 
   p {
