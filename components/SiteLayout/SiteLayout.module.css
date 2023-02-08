@@ -27,13 +27,13 @@
   box-sizing: border-box;
 
   animation-name: wzium;
-  animation-duration: 0.5s;
+  animation-duration: 0.35s;
 }
 
 @keyframes wzium {
   from {
     opacity: 0;
-    transform: rotate(-1deg) scale(0.9);
+    transform: scale(0.9);
   }
   to {
     opacity: 1;

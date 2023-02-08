@@ -51,12 +51,8 @@ p.caption {
   line-height: 1em;
   color: #999999;
   cursor: default;
-  opacity: 0;
-}
-p.captionDoneLoading{
   opacity: 1;
 }
-
 
 a.navLink {
   text-decoration: none;

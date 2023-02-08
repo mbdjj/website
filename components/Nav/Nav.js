@@ -36,7 +36,6 @@ export default function Nav(props) {
   useEffect(() => {
     setTitle(getTitle());
     captionRef.current.classList.add(styles.animateTitle);
-    captionRef.current.classList.add('captionDoneLoading');
     setTimeout(() => {
       captionRef.current.classList.remove(styles.animateTitle);
     }, 250);

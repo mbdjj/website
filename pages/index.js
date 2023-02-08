@@ -38,60 +38,60 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      
+
       <SiteLayout>
         <Nav selectedItem="index" />
-          <div className="line"></div>
-          <div>
-            <p>
-              Hello! I&apos;m Marcin, {getArticle(age)} {age} year old iOS
-              Developer and{" "}
-              <a
-                className="inlineLink"
-                href="https://zsk.poznan.pl"
-                target="_blank"
-                rel="noreferrer"
-              >
-                ZSK
-              </a>{" "}
-              student. In my free time I play video games, code, and watch
-              movies. You can follow me on{" "}
-              <a
-                className="inlineLink"
-                href="https://twitter.com/bartmisnki"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Twitter
-              </a>
-              , check out my projects on{" "}
-              <a
-                className="inlineLink"
-                href="https://github.com/mbdjj"
-                target="_blank"
-                rel="noreferrer"
-              >
-                GitHub
-              </a>
-              , or send me an{" "}
-              <a className="inlineLink" href="mailto:marcin@bartminski.ga">
-                Email
-              </a>
-              .
-            </p>
-          </div>
-          <Tilt className={styles.photoDiv} tiltMaxAngleX="5" tiltMaxAngleY="5">
-            <Image
-              src={marcinPhoto}
-              alt="Marcin in park chilling."
-              placeholder="blur"
-              className={styles.photoImage}
-            />
-          </Tilt>
-          <div className={styles.line}></div>
-          <footer>
-            <p>© Marcin Bartmiński 2022-{getCurrentYear()}</p>
-          </footer>
+        <div className="line"></div>
+        <div>
+          <p>
+            Hello! I&apos;m Marcin, {getArticle(age)} {age} year old iOS
+            Developer and{" "}
+            <a
+              className="inlineLink"
+              href="https://zsk.poznan.pl"
+              target="_blank"
+              rel="noreferrer"
+            >
+              ZSK
+            </a>{" "}
+            student. In my free time I play video games, code, and watch movies.
+            You can follow me on{" "}
+            <a
+              className="inlineLink"
+              href="https://twitter.com/bartmisnki"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Twitter
+            </a>
+            , check out my projects on{" "}
+            <a
+              className="inlineLink"
+              href="https://github.com/mbdjj"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+            , or send me an{" "}
+            <a className="inlineLink" href="mailto:marcin@bartminski.ga">
+              Email
+            </a>
+            .
+          </p>
+        </div>
+        <Tilt className={styles.photoDiv} tiltMaxAngleX="5" tiltMaxAngleY="5">
+          <Image
+            src={marcinPhoto}
+            alt="Marcin in park chilling."
+            placeholder="blur"
+            className={styles.photoImage}
+          />
+        </Tilt>
+        <div className={styles.line}></div>
+        <footer>
+          <p>© Marcin Bartmiński 2022-{getCurrentYear()}</p>
+        </footer>
       </SiteLayout>
     </>
   );
