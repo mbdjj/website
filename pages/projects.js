@@ -33,18 +33,22 @@ export default function Projects() {
         {projects.map((project, index) => {
           return (
             <div key={index} className={styles.project}>
-              <div className={styles.imageDiv}></div>
-              <div className={styles.textDiv}>
-                <h2>{project.name}</h2>
-                <p>{project.description}</p>
-                <div className={styles.tagsWrapper}>
-                  {project.tags.map((tag, index) => {
-                    return (
-                      <p key={index} className={styles.tag}>{tag}</p>
-                    )
-                  })}
+              <a href={project.link} target="_blank" rel="noreferrer">
+                <div className={styles.imageDiv}></div>
+                <div className={styles.textDiv}>
+                  <h2>{project.name}</h2>
+                  <p>{project.description}</p>
+                  <div className={styles.tagsWrapper}>
+                    {project.tags.map((tag, index) => {
+                      return (
+                        <p key={index} className={styles.tag}>
+                          {tag}
+                        </p>
+                      );
+                    })}
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
           );
         })}

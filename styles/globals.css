@@ -54,6 +54,10 @@ p.caption {
   opacity: 1;
 }
 
+a {
+  text-decoration: none;
+}
+
 a.navLink {
   text-decoration: none;
   color: #999999;
