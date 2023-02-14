@@ -1,0 +1,30 @@
+.project {
+  width: 100%;
+  background-color: lightgray;
+  padding-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.imageDiv {
+  width: 100%;
+  aspect-ratio: 16/10;
+  background-color: blue;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.textDiv {
+  margin: 0 1rem;
+}
+
+.tagsWrapper {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
+}
+
+p.tag {
+  padding: 0 8px;
+  border-radius: 8px;
+  border: 1px solid black;
+}

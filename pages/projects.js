@@ -1,6 +1,7 @@
 import Head from "next/head";
 import SiteLayout from "../components/SiteLayout/SiteLayout";
 import Nav from "../components/Nav/Nav";
+import Footer from "../components/Footer/Footer";
 import Construction from "../components/Construction/Construction";
 import styles from "../styles/Projects.module.css";
 
@@ -8,16 +9,9 @@ export default function Projects() {
   const projects = [
     {
       name: "Walut",
-      description: "",
-      category: "iOS App",
-      state: "Published",
-      link: "https://github.com/mbdjj/Walut",
-    },
-    {
-      name: "Walut",
-      description: "",
-      category: "iOS App",
-      state: "Published",
+      description:
+        "App that you can use to check currency rates. Written in SwiftUI.",
+      tags: ["iOS App", "SwiftUI", "WidgetKit", "API"],
       link: "https://github.com/mbdjj/Walut",
     },
   ];
@@ -34,17 +28,28 @@ export default function Projects() {
         <Nav selectedItem="projects" />
         <div className="line"></div>
 
+        <Construction />
+
         {projects.map((project, index) => {
           return (
-            <div key={index}>
-              <h2>{projects[0].name}</h2>
-              <p>{projects[0].category}</p>
-              <p>{projects[0].state}</p>
+            <div key={index} className={styles.project}>
+              <div className={styles.imageDiv}></div>
+              <div className={styles.textDiv}>
+                <h2>{project.name}</h2>
+                <p>{project.description}</p>
+                <div className={styles.tagsWrapper}>
+                  {project.tags.map((tag, index) => {
+                    return (
+                      <p key={index} className={styles.tag}>{tag}</p>
+                    )
+                  })}
+                </div>
+              </div>
             </div>
           );
         })}
-
-        <Construction />
+        <div className="line"></div>
+        <Footer />
       </SiteLayout>
     </>
   );

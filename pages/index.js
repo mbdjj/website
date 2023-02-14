@@ -6,6 +6,7 @@ import Tilt from "react-parallax-tilt";
 
 import Nav from "../components/Nav/Nav";
 import SiteLayout from "../components/SiteLayout/SiteLayout";
+import Footer from "../components/Footer/Footer";
 
 function getAge() {
   const today = new Date();
@@ -19,12 +20,6 @@ function getAge() {
 
 function getArticle(age) {
   return [8, 11, 18].includes(age) ? "an" : "a";
-}
-
-function getCurrentYear() {
-  const today = new Date();
-
-  return today.getFullYear();
 }
 
 export default function Home() {
@@ -89,9 +84,7 @@ export default function Home() {
           />
         </Tilt>
         <div className={styles.line}></div>
-        <footer>
-          <p>© Marcin Bartmiński 2022-{getCurrentYear()}</p>
-        </footer>
+        <Footer />
       </SiteLayout>
     </>
   );
