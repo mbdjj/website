@@ -1,6 +1,6 @@
 .project {
   width: 100%;
-  background-color: lightgray;
+  background-color: #eee;
   padding-bottom: 1rem;
   border-radius: 8px;
 }
@@ -8,7 +8,7 @@
 .imageDiv {
   width: 100%;
   aspect-ratio: 16/10;
-  background-color: blue;
+  background-color: #ddd;
   border-radius: 8px;
   margin-bottom: 1rem;
 }
@@ -27,6 +27,20 @@
 p.tag {
   border-radius: 8px;
   padding: 0 8px;
-  border: 1px solid black;
+  border: 1px solid #282C34;
   font-size: 0.85rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .project {
+    background-color: #282828;
+  }
+
+  .imageDiv {
+    background-color: #333;
+  }
+
+  p.tag {
+    border-color: #d5dae5;
+  }
 }
