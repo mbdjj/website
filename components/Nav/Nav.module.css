@@ -27,7 +27,7 @@
 }
 
 .avatarLink {
-  clip-path: url("#shape-hex");
+  border-radius: 8px;
   box-sizing: border-box;
   display: block;
   height: 48px;

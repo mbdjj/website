@@ -25,20 +25,6 @@
   position: relative;
   width: 600px;
   box-sizing: border-box;
-
-  animation-name: wzium;
-  animation-duration: 0.35s;
-}
-
-@keyframes wzium {
-  from {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: rotate(0deg) scale(1);
-  }
 }
 
 @media (min-width: 810px) and (max-width: 999px) {
