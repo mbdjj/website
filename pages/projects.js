@@ -14,6 +14,20 @@ export default function Projects() {
       tags: ["iOS App", "SwiftUI", "WidgetKit", "API"],
       link: "https://github.com/mbdjj/Walut",
     },
+    {
+      name: "bartminski.ga",
+      description:
+        "My personal website.",
+      tags: ["Website", "React", "next.js", "CSS"],
+      link: "https://github.com/mbdjj/bartminski.ga",
+    },
+    {
+      name: "Protein Coder",
+      description:
+        "An app to code proteins using amino acids",
+      tags: ["iOS App", "SwiftUI"],
+      link: "https://github.com/mbdjj/protein-coder",
+    },
   ];
 
   return (
