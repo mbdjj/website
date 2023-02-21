@@ -23,10 +23,10 @@ function getNavTitle(selected) {
   switch (selected) {
     case "projects":
       return "My projects";
-      break;
     case "experience":
       return "My experience";
-      break;
+    case "links":
+      return "Social links";
     default:
       return "Marcin Bartmiński";
   }
@@ -46,6 +46,9 @@ export default function Nav(props) {
       break;
     case "experience":
       selectedArray[2] = "selected";
+      break;
+    case "links":
+      selectedArray[3] = "selected";
   }
 
   useEffect(() => {
@@ -121,6 +124,13 @@ export default function Nav(props) {
             <p>
               <Link className={"navLink " + selectedArray[2]} href="/experience">
                 Experience
+              </Link>
+            </p>
+          </div>
+          <div>
+            <p>
+              <Link className={"navLink " + selectedArray[3]} href="/links">
+                Links
               </Link>
             </p>
           </div>
