@@ -1,5 +1,13 @@
-.project {
+.projectsContainer {
   width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.project {
+  width: 48%;
   background-color: #eee;
   padding-bottom: 1rem;
   border-radius: 8px;
@@ -42,5 +50,11 @@ p.tag {
 
   p.tag {
     border-color: #d5dae5;
+  }
+}
+
+@media (max-width: 611px) {
+  .project {
+    width: 100%;
   }
 }

@@ -5,6 +5,8 @@ import Footer from "../components/Footer/Footer";
 import Construction from "../components/Construction/Construction";
 import styles from "../styles/Projects.module.css";
 
+import Link from "next/link";
+
 export default function Projects() {
   const projects = [
     {
@@ -16,15 +18,13 @@ export default function Projects() {
     },
     {
       name: "bartminski.ga",
-      description:
-        "My personal website.",
+      description: "My personal website.",
       tags: ["Website", "React", "next.js", "CSS"],
       link: "https://github.com/mbdjj/bartminski.ga",
     },
     {
       name: "Protein Coder",
-      description:
-        "An app to code proteins using amino acids",
+      description: "An app to code proteins using amino acids",
       tags: ["iOS App", "SwiftUI"],
       link: "https://github.com/mbdjj/protein-coder",
     },
@@ -44,28 +44,30 @@ export default function Projects() {
 
         <Construction />
 
-        {projects.map((project, index) => {
-          return (
-            <div key={index} className={styles.project}>
-              <a href={project.link} target="_blank" rel="noreferrer">
-                <div className={styles.imageDiv}></div>
-                <div className={styles.textDiv}>
-                  <h2>{project.name}</h2>
-                  <p>{project.description}</p>
-                  <div className={styles.tagsWrapper}>
-                    {project.tags.map((tag, index) => {
-                      return (
-                        <p key={index} className={styles.tag}>
-                          {tag}
-                        </p>
-                      );
-                    })}
+        <div className={styles.projectsContainer}>
+          {projects.map((project, index) => {
+            return (
+              <div key={index} className={styles.project}>
+                <Link href={project.link} target="_blank" rel="noreferrer">
+                  <div className={styles.imageDiv}></div>
+                  <div className={styles.textDiv}>
+                    <h2>{project.name}</h2>
+                    <p>{project.description}</p>
+                    <div className={styles.tagsWrapper}>
+                      {project.tags.map((tag, index) => {
+                        return (
+                          <p key={index} className={styles.tag}>
+                            {tag}
+                          </p>
+                        );
+                      })}
+                    </div>
                   </div>
-                </div>
-              </a>
-            </div>
-          );
-        })}
+                </Link>
+              </div>
+            );
+          })}
+        </div>
         <div className="line"></div>
         <Footer />
       </SiteLayout>

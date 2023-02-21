@@ -8,7 +8,6 @@ import styles from "../styles/Links.module.css";
 import Link from "next/link";
 
 export default function Links() {
-
   const links = [
     {
       service: "GitHub",
@@ -90,12 +89,15 @@ export default function Links() {
       backgroundColor: "#6364FF",
       textColor: "#FFFFFF",
     },
-  ]
+  ];
   return (
     <>
       <Head>
-      <title>Links</title>
-        <meta name="description" content="Links to all my social media platforms." />
+        <title>Links</title>
+        <meta
+          name="description"
+          content="Links to all my social media platforms."
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
@@ -106,14 +108,21 @@ export default function Links() {
         <div className={styles.linksContainer}>
           {links.map((link, index) => {
             return (
-              <Link key={index} href={link.url} className={styles.link} style={{backgroundColor: link.backgroundColor}}>
+              <Link
+                key={index}
+                href={link.url}
+                className={styles.link}
+                style={{ backgroundColor: link.backgroundColor }}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <div className={styles.nameAndNick}>
-                  <h3 style={{color: link.textColor}}>{link.service}</h3>
-                  <p style={{color: link.textColor}}>{link.nickname}</p>
+                  <h3 style={{ color: link.textColor }}>{link.service}</h3>
+                  <p style={{ color: link.textColor }}>{link.nickname}</p>
                 </div>
-                <p style={{color: link.textColor}}>{link.description}</p>
+                <p style={{ color: link.textColor }}>{link.description}</p>
               </Link>
-            )
+            );
           })}
         </div>
 
