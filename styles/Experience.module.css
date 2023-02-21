@@ -31,7 +31,6 @@
 }
 
 .experienceItem:hover::before {
-  background-color: #0088ff;
   transform: translateY(-50%) rotateZ(90deg);
 }
 
