@@ -1,0 +1,27 @@
+.linksContainer {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 16px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nameAndNick {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.link {
+  min-height: 48px;
+  min-width: 240px;
+  width: 43%;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+@media (max-width: 611px) {
+  .link {
+    width: 100%;
+  }
+}

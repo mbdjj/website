@@ -40,17 +40,8 @@ export default function Home() {
         <div>
           <p>
             Hello! I&apos;m Marcin, {getArticle(age)} {age} year old iOS
-            Developer and{" "}
-            <a
-              className="inlineLink"
-              href="https://zsk.poznan.pl"
-              target="_blank"
-              rel="noreferrer"
-            >
-              ZSK
-            </a>{" "}
-            student. In my free time I play video games, code, and watch movies.
-            You can follow me on{" "}
+            Developer and IT student. In my free time I play video games, code,
+            and watch movies. You can follow me on{" "}
             <a
               className="inlineLink"
               href="https://twitter.com/bartmisnki"
