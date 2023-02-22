@@ -6,6 +6,10 @@ import Construction from "../components/Construction/Construction";
 import styles from "../styles/Projects.module.css";
 
 import Link from "next/link";
+import Image from "next/image";
+
+import walutImg from "../public/images/screenshots/walut.png";
+import websiteImg from "../public/images/screenshots/website.png";
 
 export default function Projects() {
   const projects = [
@@ -15,18 +19,16 @@ export default function Projects() {
         "App that you can use to check currency rates. Written in SwiftUI.",
       tags: ["iOS App", "SwiftUI", "WidgetKit", "API"],
       link: "https://github.com/mbdjj/Walut",
+      img: walutImg,
+      imgAlt: "Walut app promo image",
     },
     {
       name: "bartminski.ga",
       description: "My personal website.",
       tags: ["Website", "React", "next.js", "CSS"],
       link: "https://github.com/mbdjj/bartminski.ga",
-    },
-    {
-      name: "Protein Coder",
-      description: "An app to code proteins using amino acids",
-      tags: ["iOS App", "SwiftUI"],
-      link: "https://github.com/mbdjj/protein-coder",
+      img: websiteImg,
+      imgAlt: "My personal website promo image",
     },
   ];
 
@@ -42,14 +44,19 @@ export default function Projects() {
         <Nav selectedItem="projects" />
         <div className="line"></div>
 
-        <Construction />
-
         <div className={styles.projectsContainer}>
           {projects.map((project, index) => {
             return (
               <div key={index} className={styles.project}>
                 <Link href={project.link} target="_blank" rel="noreferrer">
-                  <div className={styles.imageDiv}></div>
+                  <div className={styles.imageDiv}>
+                    <Image
+                      src={project.img}
+                      alt={project.imgAlt}
+                      placeholder="blur"
+                      className={styles.projectImage}
+                    />
+                  </div>
                   <div className={styles.textDiv}>
                     <h2>{project.name}</h2>
                     <p>{project.description}</p>

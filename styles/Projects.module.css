@@ -19,6 +19,12 @@
   background-color: #ddd;
   border-radius: 8px;
   margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.projectImage {
+  width: 100%;
+  height: auto;
 }
 
 .textDiv {
