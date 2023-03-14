@@ -18,6 +18,14 @@ export default function Links() {
       textColor: "#f5f5f5",
     },
     {
+      service: "CV",
+      url: "https://read.cv/bartmisnki",
+      nickname: "bartmisnki",
+      description: "My CV but it actually looks nice.",
+      backgroundColor: "#f6f6f6",
+      textColor: "#111111",
+    },
+    {
       service: "Twitter",
       url: "https://twitter.com/bartmisnki",
       nickname: "@bartmisnki",
