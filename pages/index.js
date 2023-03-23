@@ -74,7 +74,7 @@ export default function Home() {
             className={styles.photoImage}
           />
         </Tilt>
-        <div className={styles.line}></div>
+        <div className="line"></div>
         <Footer />
       </SiteLayout>
     </>
