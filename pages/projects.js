@@ -10,6 +10,7 @@ import Image from "next/image";
 
 import walutImg from "../public/images/screenshots/walut.png";
 import websiteImg from "../public/images/screenshots/website.png";
+import whenMaturaImg from "../public/images/screenshots/whenMatura.png";
 
 export default function Projects() {
   const projects = [
@@ -29,6 +30,14 @@ export default function Projects() {
       link: "https://github.com/mbdjj/bartminski.ga",
       img: websiteImg,
       imgAlt: "My personal website promo image",
+    },
+    {
+      name: "Kiedy matura?",
+      description: "App to check when is your matura exam.",
+      tags: ["iOS App", "SwiftUI", "WidgetKit"],
+      link: "https://github.com/mbdjj/when-matura",
+      img: whenMaturaImg,
+      imgAlt: "Kiedy matura? app promo image",
     },
   ];
 
