@@ -21,6 +21,13 @@ export default function Experience() {
       endDate: "06.2022",
       url: "https://poznan-grunwald.sr.gov.pl/",
     },
+    {
+      position: "iOS Developer Intern",
+      place: "AppUnite",
+      startDate: "05.2023",
+      endDate: "present",
+      url: "https://appunite.com",
+    },
   ];
 
   return (
