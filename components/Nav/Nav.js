@@ -6,8 +6,7 @@ import nftAvatar from "../../public/images/nft-avatar.png";
 
 function getTitle() {
   const titleArray = [
-    "iOS app developer",
-    "loved boyfriend",
+    "iOS Developer",
     "IT student",
     "Yu-Gi-Oh duelist",
     "Rocket League player",
