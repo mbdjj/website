@@ -16,8 +16,7 @@
 .photoImage {
   width: 100%;
   height: 100%;
-  object-position: center;
+  object-position: 50% 15%;
   object-fit: cover;
   image-rendering: auto;
 }
-

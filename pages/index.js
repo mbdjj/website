@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
-import marcinPhoto from "../public/images/marcin.jpeg";
+import marcinPhoto from "../public/images/pfp.jpeg";
 import Tilt from "react-parallax-tilt";
 
 import Nav from "../components/Nav/Nav";
@@ -74,6 +74,7 @@ export default function Home() {
             className={styles.photoImage}
             width={600}
             height={600}
+            quality={85}
           />
         </Tilt>
         <div className="line"></div>
