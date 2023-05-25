@@ -35,7 +35,7 @@ export default function Links() {
     },
     {
       service: "LinkedIn",
-      url: "https://www.linkedin.com/in/marcin-bartmiński-521a971a1/",
+      url: "https://www.linkedin.com/in/bartmisnki/",
       nickname: "Marcin Bartmiński",
       description: "My working profile.",
       backgroundColor: "#0077b5",

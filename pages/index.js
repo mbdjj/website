@@ -60,7 +60,7 @@ export default function Home() {
               GitHub
             </a>
             , or send me an{" "}
-            <a className="inlineLink" href="mailto:marcin@bartminski.ga">
+            <a className="inlineLink" href="mailto:marcin@bartminski.dev">
               Email
             </a>
             .
