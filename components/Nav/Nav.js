@@ -1,6 +1,8 @@
 import styles from "./Nav.module.css";
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
+import nftAvatar from "../../public/images/nft-avatar.png";
 
 function getTitle() {
   const titleArray = [
@@ -82,9 +84,16 @@ export default function Nav(props) {
     <div className={styles.nav}>
       <div className={styles.navContainer}>
         <div className={styles.avatarLinkDiv}>
-          <Link href="/" className={styles.avatarLink}>
+          <Link href="/" className={styles.avatarLink} aria-label="Main page">
             <div className={styles.avatarDiv}>
-              <img src="images/nft-avatar.png" className={styles.avatarImage} />
+              <Image
+                src={nftAvatar}
+                alt="Nyoling #6949"
+                placeholder="blur"
+                className={styles.avatarImage}
+                width={48}
+                height={48}
+              />
             </div>
           </Link>
         </div>

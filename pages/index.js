@@ -72,6 +72,8 @@ export default function Home() {
             alt="Marcin in park chilling."
             placeholder="blur"
             className={styles.photoImage}
+            width={600}
+            height={600}
           />
         </Tilt>
         <div className="line"></div>
