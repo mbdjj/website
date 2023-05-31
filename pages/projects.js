@@ -24,10 +24,10 @@ export default function Projects() {
       imgAlt: "Walut app promo image",
     },
     {
-      name: "bartminski.ga",
+      name: "website",
       description: "My personal website.",
       tags: ["Website", "React", "next.js", "CSS"],
-      link: "https://github.com/mbdjj/bartminski.ga",
+      link: "https://github.com/mbdjj/website",
       img: websiteImg,
       imgAlt: "My personal website promo image",
     },
