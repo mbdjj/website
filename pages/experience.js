@@ -18,14 +18,14 @@ export default function Experience() {
       position: "IT Intern",
       place: "Sąd Rejonowy Poznań - Grunwald i Jeżyce",
       startDate: "05.2022",
-      endDate: "06.2022",
+      endDate: "05.2022",
       url: "https://poznan-grunwald.sr.gov.pl/",
     },
     {
       position: "iOS Intern",
       place: "AppUnite",
       startDate: "05.2023",
-      endDate: "06.2023",
+      endDate: "05.2023",
       url: "https://appunite.com",
     },
   ];
@@ -57,7 +57,7 @@ export default function Experience() {
                     {experience.place}
                   </p>
                   <p>
-                    {`${experience.startDate} - ${experience.endDate}`}
+                    {experience.startDate != experience.endDate ? `${experience.startDate} - ${experience.endDate}` : experience.startDate}
                   </p>
                 </a>
               </li>
