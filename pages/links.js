@@ -44,7 +44,7 @@ export default function Links() {
     {
       service: "Discord",
       url: "https://discord.com/",
-      nickname: "marcin#0069",
+      nickname: "bartmisnki",
       description: "Talking to frens.",
       backgroundColor: "#5865f2",
       textColor: "#ffffff",
