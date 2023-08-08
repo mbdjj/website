@@ -26,12 +26,12 @@ export default function Links() {
       textColor: "#111111",
     },
     {
-      service: "Twitter",
-      url: "https://twitter.com/bartmisnki",
+      service: "X",
+      url: "https://x.com/bartmisnki",
       nickname: "@bartmisnki",
-      description: "Tweets about iOS Development.",
-      backgroundColor: "#1da1f2",
-      textColor: "#f5f8fa",
+      description: "Posts about iOS Development.",
+      backgroundColor: "#000000",
+      textColor: "#ffffff",
     },
     {
       service: "LinkedIn",
@@ -87,14 +87,6 @@ export default function Links() {
       nickname: "marcin#22626",
       description: "Heroes never die!",
       backgroundColor: "#FA9C1D",
-      textColor: "#FFFFFF",
-    },
-    {
-      service: "Mastodon",
-      url: "https://iosdev.space/@bartmisnki",
-      nickname: "@bartmsnki",
-      description: "Toots instead of tweets.",
-      backgroundColor: "#6364FF",
       textColor: "#FFFFFF",
     },
   ];
