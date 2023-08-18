@@ -44,11 +44,11 @@ export default function Home() {
             and watch movies. You can follow me on{" "}
             <a
               className="inlineLink"
-              href="https://twitter.com/bartmisnki"
+              href="https://x.com/bartmisnki"
               target="_blank"
               rel="noreferrer"
             >
-              Twitter
+              X
             </a>
             , check out my projects on{" "}
             <a
