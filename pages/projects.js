@@ -11,6 +11,7 @@ import Image from "next/image";
 import walutImg from "../public/images/screenshots/walut.png";
 import websiteImg from "../public/images/screenshots/website.png";
 import whenMaturaImg from "../public/images/screenshots/whenMatura.png";
+import walutWebImg from "../public/images/screenshots/walutWeb.png";
 
 export default function Projects() {
   const projects = [
@@ -38,6 +39,14 @@ export default function Projects() {
       link: "https://github.com/mbdjj/when-matura",
       img: whenMaturaImg,
       imgAlt: "Kiedy matura? app promo image",
+    },
+    {
+      name: "Walut Web",
+      description: "Walut but web application.",
+      tags: ["Website", "React", "next.js", "API"],
+      link: "https://github.com/mbdjj/Walut-web",
+      img: walutWebImg,
+      imgAlt: "Walut web promo image",
     },
   ];
 
