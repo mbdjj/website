@@ -6,12 +6,18 @@ import Construction from "../components/Construction/Construction";
 import styles from "../styles/Experience.module.css";
 
 export default function Experience() {
+  const schoolEndDate = () => {
+    const now = new Date();
+    const currentTimestamp = now.getTime();
+    const schoolEndTimestamp = Date.parse("2024-04-26");
+    return schoolEndTimestamp < currentTimestamp ? "04.2024" : "present";
+  };
   const experiences = [
     {
       position: "Bilingual IT Student",
       place: "Zespół Szkół Komunikacji w Poznaniu",
       startDate: "09.2019",
-      endDate: "present",
+      endDate: schoolEndDate(),
       url: "https://www.zsk.poznan.pl/",
     },
     {
@@ -50,18 +56,16 @@ export default function Experience() {
             return (
               <li key={index} className={styles.experienceItem}>
                 <a href={experience.url}>
-                  <h2>
-                    {experience.position}
-                  </h2>
+                  <h2>{experience.position}</h2>
+                  <p>{experience.place}</p>
                   <p>
-                    {experience.place}
-                  </p>
-                  <p>
-                    {experience.startDate != experience.endDate ? `${experience.startDate} - ${experience.endDate}` : experience.startDate}
+                    {experience.startDate != experience.endDate
+                      ? `${experience.startDate} - ${experience.endDate}`
+                      : experience.startDate}
                   </p>
                 </a>
               </li>
-            )
+            );
           })}
         </ol>
 
