@@ -26,10 +26,10 @@ export default function Links() {
       textColor: "#111111",
     },
     {
-      service: "X",
-      url: "https://x.com/bartmisnki",
+      service: "Threads",
+      url: "https://threads.net/bartmisnki",
       nickname: "@bartmisnki",
-      description: "Posts about iOS Development.",
+      description: "My personal diary.",
       backgroundColor: "#000000",
       textColor: "#ffffff",
     },
@@ -72,22 +72,6 @@ export default function Links() {
       description: "Photos of me.",
       backgroundColor: "#e1306c",
       textColor: "#ffffff",
-    },
-    {
-      service: "Facebook",
-      url: "https://www.facebook.com/bartmisnki/",
-      nickname: "Marcin Bartmiński",
-      description: "My face in the book.",
-      backgroundColor: "#1877f2",
-      textColor: "#ffffff",
-    },
-    {
-      service: "Overwatch 2",
-      url: "https://overwatch.blizzard.com/pl-pl/career/marcin-22626/",
-      nickname: "marcin#22626",
-      description: "Heroes never die!",
-      backgroundColor: "#FA9C1D",
-      textColor: "#FFFFFF",
     },
   ];
   return (

@@ -44,11 +44,11 @@ export default function Home() {
             and watch movies. You can follow me on{" "}
             <a
               className="inlineLink"
-              href="https://x.com/bartmisnki"
+              href="https://threads.net/bartmisnki"
               target="_blank"
               rel="noreferrer"
             >
-              X
+              Threads
             </a>
             , check out my projects on{" "}
             <a
