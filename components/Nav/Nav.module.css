@@ -19,6 +19,13 @@
   width: 100%;
 }
 
+.navTitle {
+  display: flex;
+  gap: 20px;
+  height: 50px;
+  justify-content: center;
+}
+
 .avatarLinkDiv {
   flex: 0 0 auto;
   height: auto;
@@ -32,6 +39,7 @@
   display: block;
   height: 48px;
   overflow: visible;
+  position: relative;
   text-decoration: none;
   width: 48px;
 }
@@ -60,6 +68,7 @@
 .titleDiv {
   display: flex;
   flex-flow: column nowrap;
+  justify-content: center;
 }
 
 .animateTitle {

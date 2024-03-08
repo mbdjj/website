@@ -82,36 +82,32 @@ export default function Nav(props) {
   return (
     <div className={styles.nav}>
       <div className={styles.navContainer}>
-        <div className={styles.avatarLinkDiv}>
-          <Link href="/" className={styles.avatarLink} aria-label="Main page">
-            <div className={styles.avatarDiv}>
-              <Image
-                src={nftAvatar}
-                alt="Nyoling #6949"
-                placeholder="blur"
-                className={styles.avatarImage}
-                width={48}
-                height={48}
-              />
-            </div>
-          </Link>
-        </div>
-        <div className={styles.titleDiv}>
-          <h1
-            style={
-              selectedArray[0] != "selected" ? { paddingBottom: "14px" } : {}
-            }
-          >
-            {getNavTitle(props.selectedItem)}
-          </h1>
+        <div className={styles.navTitle}>
+          <div className={styles.avatarLinkDiv}>
+            <Link href="/" className={styles.avatarLink} aria-label="Main page">
+              <div className={styles.avatarDiv}>
+                <Image
+                  src={nftAvatar}
+                  alt="Nyoling #6949"
+                  placeholder="blur"
+                  className={styles.avatarImage}
+                  width={48}
+                  height={48}
+                />
+              </div>
+            </Link>
+          </div>
+          <div className={styles.titleDiv}>
+            <h1>{getNavTitle(props.selectedItem)}</h1>
 
-          {selectedArray[0] == "selected" ? (
-            <p className="caption" ref={captionRef} onClick={changeTitle}>
-              {title || "..."}
-            </p>
-          ) : (
-            <></>
-          )}
+            {selectedArray[0] == "selected" ? (
+              <p className="caption" ref={captionRef} onClick={changeTitle}>
+                {title || "..."}
+              </p>
+            ) : (
+              <></>
+            )}
+          </div>
         </div>
         <nav>
           <div>
@@ -130,7 +126,10 @@ export default function Nav(props) {
           </div>
           <div>
             <p>
-              <Link className={"navLink " + selectedArray[2]} href="/experience">
+              <Link
+                className={"navLink " + selectedArray[2]}
+                href="/experience"
+              >
                 Experience
               </Link>
             </p>
