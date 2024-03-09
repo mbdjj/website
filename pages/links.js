@@ -6,6 +6,7 @@ import Construction from "../components/Construction/Construction";
 import styles from "../styles/Links.module.css";
 
 import Link from "next/link";
+import SiteContent from "../components/SiteContent/SiteContent";
 
 export default function Links() {
   const links = [
@@ -89,26 +90,28 @@ export default function Links() {
         <Nav selectedItem="links" />
         <div className="line"></div>
 
-        <div className={styles.linksContainer}>
-          {links.map((link, index) => {
-            return (
-              <Link
-                key={index}
-                href={link.url}
-                className={styles.link}
-                style={{ backgroundColor: link.backgroundColor }}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <div className={styles.nameAndNick}>
-                  <h3 style={{ color: link.textColor }}>{link.service}</h3>
-                  <p style={{ color: link.textColor }}>{link.nickname}</p>
-                </div>
-                <p style={{ color: link.textColor }}>{link.description}</p>
-              </Link>
-            );
-          })}
-        </div>
+        <SiteContent>
+          <div className={styles.linksContainer}>
+            {links.map((link, index) => {
+              return (
+                <Link
+                  key={index}
+                  href={link.url}
+                  className={styles.link}
+                  style={{ backgroundColor: link.backgroundColor }}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div className={styles.nameAndNick}>
+                    <h3 style={{ color: link.textColor }}>{link.service}</h3>
+                    <p style={{ color: link.textColor }}>{link.nickname}</p>
+                  </div>
+                  <p style={{ color: link.textColor }}>{link.description}</p>
+                </Link>
+              );
+            })}
+          </div>
+        </SiteContent>
 
         <div className="line"></div>
         <Footer />

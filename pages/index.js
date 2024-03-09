@@ -6,6 +6,7 @@ import Tilt from "react-parallax-tilt";
 
 import Nav from "../components/Nav/Nav";
 import SiteLayout from "../components/SiteLayout/SiteLayout";
+import SiteContent from "../components/SiteContent/SiteContent";
 import Footer from "../components/Footer/Footer";
 
 function getAge() {
@@ -37,46 +38,48 @@ export default function Home() {
       <SiteLayout>
         <Nav selectedItem="index" />
         <div className="line"></div>
-        <div>
-          <p>
-            Hello! I&apos;m Marcin, {getArticle(age)} {age} year old iOS
-            Developer and IT student. In my free time I play video games, code,
-            and watch movies. You can follow me on{" "}
-            <a
-              className="inlineLink"
-              href="https://threads.net/bartmisnki"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Threads
-            </a>
-            , check out my projects on{" "}
-            <a
-              className="inlineLink"
-              href="https://github.com/mbdjj"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GitHub
-            </a>
-            , or send me an{" "}
-            <a className="inlineLink" href="mailto:marcin@bartminski.dev">
-              Email
-            </a>
-            .
-          </p>
-        </div>
-        <Tilt className={styles.photoDiv} tiltMaxAngleX="5" tiltMaxAngleY="5">
-          <Image
-            src={marcinPhoto}
-            alt="Marcin in park chilling."
-            placeholder="blur"
-            className={styles.photoImage}
-            width={600}
-            height={600}
-            quality={85}
-          />
-        </Tilt>
+        <SiteContent>
+          <div>
+            <p>
+              Hello! I&apos;m Marcin, {getArticle(age)} {age} year old iOS
+              Developer and IT student. In my free time I play video games,
+              code, and watch movies. You can follow me on{" "}
+              <a
+                className="inlineLink"
+                href="https://threads.net/bartmisnki"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Threads
+              </a>
+              , check out my projects on{" "}
+              <a
+                className="inlineLink"
+                href="https://github.com/mbdjj"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub
+              </a>
+              , or send me an{" "}
+              <a className="inlineLink" href="mailto:marcin@bartminski.dev">
+                Email
+              </a>
+              .
+            </p>
+          </div>
+          <Tilt className={styles.photoDiv} tiltMaxAngleX="5" tiltMaxAngleY="5">
+            <Image
+              src={marcinPhoto}
+              alt="Marcin in park chilling."
+              placeholder="blur"
+              className={styles.photoImage}
+              width={600}
+              height={600}
+              quality={85}
+            />
+          </Tilt>
+        </SiteContent>
         <div className="line"></div>
         <Footer />
       </SiteLayout>

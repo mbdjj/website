@@ -13,8 +13,8 @@
 }
 
 .contentContainer {
-  place-content: flex-start;
   align-items: flex-start;
+  justify-content: center;
   display: flex;
   flex: 0 0 auto;
   flex-flow: column nowrap;
@@ -23,7 +23,7 @@
   max-width: 100%;
   padding: 0px;
   position: relative;
-  width: 600px;
+  width: 100%;
   box-sizing: border-box;
 }
 

@@ -12,6 +12,7 @@ import walutImg from "../public/images/screenshots/walut.png";
 import websiteImg from "../public/images/screenshots/website.png";
 import whenMaturaImg from "../public/images/screenshots/whenMatura.png";
 import walutWebImg from "../public/images/screenshots/walutWeb.png";
+import SiteContent from "../components/SiteContent/SiteContent";
 
 export default function Projects() {
   const projects = [
@@ -62,37 +63,40 @@ export default function Projects() {
         <Nav selectedItem="projects" />
         <div className="line"></div>
 
-        <div className={styles.projectsContainer}>
-          {projects.map((project, index) => {
-            return (
-              <div key={index} className={styles.project}>
-                <Link href={project.link} target="_blank" rel="noreferrer">
-                  <div className={styles.imageDiv}>
-                    <Image
-                      src={project.img}
-                      alt={project.imgAlt}
-                      placeholder="blur"
-                      className={styles.projectImage}
-                    />
-                  </div>
-                  <div className={styles.textDiv}>
-                    <h2>{project.name}</h2>
-                    <p>{project.description}</p>
-                    <div className={styles.tagsWrapper}>
-                      {project.tags.map((tag, index) => {
-                        return (
-                          <p key={index} className={styles.tag}>
-                            {tag}
-                          </p>
-                        );
-                      })}
+        <SiteContent>
+          <div className={styles.projectsContainer}>
+            {projects.map((project, index) => {
+              return (
+                <div key={index} className={styles.project}>
+                  <Link href={project.link} target="_blank" rel="noreferrer">
+                    <div className={styles.imageDiv}>
+                      <Image
+                        src={project.img}
+                        alt={project.imgAlt}
+                        placeholder="blur"
+                        className={styles.projectImage}
+                      />
                     </div>
-                  </div>
-                </Link>
-              </div>
-            );
-          })}
-        </div>
+                    <div className={styles.textDiv}>
+                      <h2>{project.name}</h2>
+                      <p>{project.description}</p>
+                      <div className={styles.tagsWrapper}>
+                        {project.tags.map((tag, index) => {
+                          return (
+                            <p key={index} className={styles.tag}>
+                              {tag}
+                            </p>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+              );
+            })}
+          </div>
+        </SiteContent>
+
         <div className="line"></div>
         <Footer />
       </SiteLayout>

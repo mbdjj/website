@@ -4,6 +4,7 @@ import Nav from "../components/Nav/Nav";
 import Footer from "../components/Footer/Footer";
 import Construction from "../components/Construction/Construction";
 import styles from "../styles/Experience.module.css";
+import SiteContent from "../components/SiteContent/SiteContent";
 
 export default function Experience() {
   const schoolEndDate = () => {
@@ -51,23 +52,25 @@ export default function Experience() {
         <Nav selectedItem="experience" />
         <div className="line"></div>
 
-        <ol className={styles.experienceList}>
-          {experiences.reverse().map((experience, index) => {
-            return (
-              <li key={index} className={styles.experienceItem}>
-                <a href={experience.url}>
-                  <h2>{experience.position}</h2>
-                  <p>{experience.place}</p>
-                  <p>
-                    {experience.startDate != experience.endDate
-                      ? `${experience.startDate} - ${experience.endDate}`
-                      : experience.startDate}
-                  </p>
-                </a>
-              </li>
-            );
-          })}
-        </ol>
+        <SiteContent>
+          <ol className={styles.experienceList}>
+            {experiences.reverse().map((experience, index) => {
+              return (
+                <li key={index} className={styles.experienceItem}>
+                  <a href={experience.url}>
+                    <h2>{experience.position}</h2>
+                    <p>{experience.place}</p>
+                    <p>
+                      {experience.startDate != experience.endDate
+                        ? `${experience.startDate} - ${experience.endDate}`
+                        : experience.startDate}
+                    </p>
+                  </a>
+                </li>
+              );
+            })}
+          </ol>
+        </SiteContent>
 
         <div className="line"></div>
         <Footer />

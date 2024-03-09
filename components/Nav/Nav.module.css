@@ -7,9 +7,10 @@
 
 .navContainer {
   place-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: space-between;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
   gap: 20px;
   height: min-content;
   overflow: visible;
@@ -81,5 +82,13 @@
   from {
     opacity: 0;
     transform: translate(0, -16px);
+  }
+}
+
+@media (max-width: 649px) {
+  .navContainer {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-flow: column nowrap;
   }
 }

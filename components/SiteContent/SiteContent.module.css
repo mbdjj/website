@@ -1,0 +1,15 @@
+.contentContainer {
+  place-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-flow: column nowrap;
+  gap: 40px;
+  height: min-content;
+  max-width: 100%;
+  padding: 0px;
+  position: relative;
+  width: 600px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
