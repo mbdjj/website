@@ -3,11 +3,13 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  align-items: flex-start;
   gap: 16px;
 }
 
 .project {
   width: 48%;
+  height: min-content;
   background-color: var(--secondaryBackground);
   padding-bottom: 1rem;
   border-radius: 8px;
@@ -41,8 +43,8 @@
 p.tag {
   border-radius: 8px;
   padding: 0 8px;
-  border: 1px solid var(--secondary);
   color: var(--secondary);
+  background-color: var(--background);
   font-size: 0.85rem;
 }
 

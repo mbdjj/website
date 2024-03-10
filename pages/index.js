@@ -4,11 +4,6 @@ import Image from "next/image";
 import marcinPhoto from "../public/images/pfp.jpeg";
 import Tilt from "react-parallax-tilt";
 
-import Nav from "../components/Nav/Nav";
-import SiteLayout from "../components/SiteLayout/SiteLayout";
-import SiteContent from "../components/SiteContent/SiteContent";
-import Footer from "../components/Footer/Footer";
-
 function getAge() {
   const today = new Date();
   const birthDate = new Date("2004-02-23");

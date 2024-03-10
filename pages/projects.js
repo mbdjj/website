@@ -1,8 +1,4 @@
 import Head from "next/head";
-import SiteLayout from "../components/SiteLayout/SiteLayout";
-import Nav from "../components/Nav/Nav";
-import Footer from "../components/Footer/Footer";
-import Construction from "../components/Construction/Construction";
 import styles from "../styles/Projects.module.css";
 
 import Link from "next/link";
@@ -12,7 +8,6 @@ import walutImg from "../public/images/screenshots/walut.png";
 import websiteImg from "../public/images/screenshots/website.png";
 import whenMaturaImg from "../public/images/screenshots/whenMatura.png";
 import walutWebImg from "../public/images/screenshots/walutWeb.png";
-import SiteContent from "../components/SiteContent/SiteContent";
 
 export default function Projects() {
   const projects = [

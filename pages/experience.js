@@ -1,10 +1,5 @@
 import Head from "next/head";
-import SiteLayout from "../components/SiteLayout/SiteLayout";
-import Nav from "../components/Nav/Nav";
-import Footer from "../components/Footer/Footer";
-import Construction from "../components/Construction/Construction";
 import styles from "../styles/Experience.module.css";
-import SiteContent from "../components/SiteContent/SiteContent";
 
 export default function Experience() {
   const schoolEndDate = () => {
@@ -30,7 +25,7 @@ export default function Experience() {
     },
     {
       position: "iOS Intern",
-      place: "AppUnite",
+      place: "Appunite",
       startDate: "05.2023",
       endDate: "05.2023",
       url: "https://appunite.com",

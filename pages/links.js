@@ -1,12 +1,6 @@
 import Head from "next/head";
-import SiteLayout from "../components/SiteLayout/SiteLayout";
-import Nav from "../components/Nav/Nav";
-import Footer from "../components/Footer/Footer";
-import Construction from "../components/Construction/Construction";
 import styles from "../styles/Links.module.css";
-
 import Link from "next/link";
-import SiteContent from "../components/SiteContent/SiteContent";
 
 export default function Links() {
   const links = [
@@ -21,7 +15,7 @@ export default function Links() {
     {
       service: "CV",
       url: "/cv.pdf",
-      nickname: "bartmisnki",
+      nickname: "",
       description: "My CV (very epic).",
       backgroundColor: "#f6f6f6",
       textColor: "#111111",
@@ -53,7 +47,7 @@ export default function Links() {
     {
       service: "Steam",
       url: "https://steamcommunity.com/id/mbdjj",
-      nickname: "marcin",
+      nickname: "mbdjj",
       description: "Gaming.",
       backgroundColor: "#2a475e",
       textColor: "#c7d5e0",
