@@ -85,7 +85,7 @@
   }
 }
 
-@media (max-width: 649px) {
+@media (max-width: 756px) {
   .navContainer {
     align-items: flex-start;
     justify-content: flex-start;
