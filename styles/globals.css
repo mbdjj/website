@@ -86,7 +86,8 @@ a.navLink {
   border-radius: 10px;
   user-select: none;
   color: var(--primary);
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
 
 a.navLink:hover {
@@ -137,6 +138,18 @@ footer {
   justify-content: center;
   width: 100%;
   height: 20px;
+}
+
+.errorContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: 45dvh;
+  justify-content: center;
+  align-items: center;
+}
+.errorContainer .emoji {
+  font-size: 7rem;
 }
 
 @media (prefers-color-scheme: dark) {
