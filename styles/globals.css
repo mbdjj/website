@@ -71,7 +71,8 @@ p.caption {
   font-size: 14px;
   line-height: 1em;
   color: var(--secondary);
-  cursor: default;
+  cursor: pointer;
+  user-select: none;
   opacity: 1;
 }
 
@@ -83,6 +84,7 @@ a.navLink {
   padding-block: 0.5rem;
   padding-inline: 1rem;
   border-radius: 10px;
+  user-select: none;
   color: var(--primary);
   transition: background-color 0.2s ease;
 }
@@ -139,10 +141,10 @@ footer {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #1C1B1D;
+    --background: #1c1b1d;
     --primary: #ffffff;
     --secondary: #8f8e94;
-    --secondaryBackground: #2C2B2D;
+    --secondaryBackground: #2c2b2d;
     --blue: #0084ff;
   }
 }
