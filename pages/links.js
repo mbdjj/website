@@ -86,36 +86,26 @@ export default function Links() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <SiteLayout>
-        <Nav selectedItem="links" />
-        <div className="line"></div>
-
-        <SiteContent>
-          <div className={styles.linksContainer}>
-            {links.map((link, index) => {
-              return (
-                <Link
-                  key={index}
-                  href={link.url}
-                  className={styles.link}
-                  style={{ backgroundColor: link.backgroundColor }}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <div className={styles.nameAndNick}>
-                    <h3 style={{ color: link.textColor }}>{link.service}</h3>
-                    <p style={{ color: link.textColor }}>{link.nickname}</p>
-                  </div>
-                  <p style={{ color: link.textColor }}>{link.description}</p>
-                </Link>
-              );
-            })}
-          </div>
-        </SiteContent>
-
-        <div className="line"></div>
-        <Footer />
-      </SiteLayout>
+      <div className={styles.linksContainer}>
+        {links.map((link, index) => {
+          return (
+            <Link
+              key={index}
+              href={link.url}
+              className={styles.link}
+              style={{ backgroundColor: link.backgroundColor }}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className={styles.nameAndNick}>
+                <h3 style={{ color: link.textColor }}>{link.service}</h3>
+                <p style={{ color: link.textColor }}>{link.nickname}</p>
+              </div>
+              <p style={{ color: link.textColor }}>{link.description}</p>
+            </Link>
+          );
+        })}
+      </div>
     </>
   );
 }

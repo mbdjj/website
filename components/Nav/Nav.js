@@ -2,6 +2,7 @@ import styles from "./Nav.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
+import { usePathname } from "next/navigation";
 import nftAvatar from "../../public/images/nft-avatar.png";
 
 function getTitle() {
@@ -22,39 +23,29 @@ function getTitle() {
 
 function getNavTitle(selected) {
   switch (selected) {
-    case "projects":
+    case "/projects":
       return "My projects";
-    case "experience":
+    case "/experience":
       return "My experience";
-    case "links":
+    case "/links":
       return "Social links";
     default:
       return "Marcin Bartmiński";
   }
 }
 
-export default function Nav(props) {
+export default function Nav() {
+  const pathname = usePathname();
   const [title, setTitle] = useState("");
-  const selectedArray = ["", ""];
   const captionRef = useRef(null);
 
-  switch (props.selectedItem) {
-    case "index":
-      selectedArray[0] = "selected";
-      break;
-    case "projects":
-      selectedArray[1] = "selected";
-      break;
-    case "experience":
-      selectedArray[2] = "selected";
-      break;
-    case "links":
-      selectedArray[3] = "selected";
-  }
+  useEffect(() => {
+    console.log(pathname);
+  }, [pathname]);
 
   useEffect(() => {
-    if (selectedArray[0] == "selected") {
-      setTitle(getTitle());
+    setTitle(getTitle());
+    if (pathname === "/") {
       captionRef.current.classList.add(styles.animateTitle);
       setTimeout(() => {
         captionRef.current.classList.remove(styles.animateTitle);
@@ -98,9 +89,9 @@ export default function Nav(props) {
             </Link>
           </div>
           <div className={styles.titleDiv}>
-            <h1>{getNavTitle(props.selectedItem)}</h1>
+            <h1>{getNavTitle(pathname)}</h1>
 
-            {selectedArray[0] == "selected" ? (
+            {pathname === "/" ? (
               <p className="caption" ref={captionRef} onClick={changeTitle}>
                 {title || "..."}
               </p>
@@ -112,14 +103,22 @@ export default function Nav(props) {
         <nav>
           <div>
             <p>
-              <Link className={"navLink " + selectedArray[0]} href="/">
+              <Link
+                className={"navLink " + (pathname === "/" ? "selected" : "")}
+                href="/"
+              >
                 About me
               </Link>
             </p>
           </div>
           <div>
             <p>
-              <Link className={"navLink " + selectedArray[1]} href="/projects">
+              <Link
+                className={
+                  "navLink " + (pathname === "/projects" ? "selected" : "")
+                }
+                href="/projects"
+              >
                 Projects
               </Link>
             </p>
@@ -127,7 +126,9 @@ export default function Nav(props) {
           <div>
             <p>
               <Link
-                className={"navLink " + selectedArray[2]}
+                className={
+                  "navLink " + (pathname === "/experience" ? "selected" : "")
+                }
                 href="/experience"
               >
                 Experience
@@ -136,7 +137,12 @@ export default function Nav(props) {
           </div>
           <div>
             <p>
-              <Link className={"navLink " + selectedArray[3]} href="/links">
+              <Link
+                className={
+                  "navLink " + (pathname === "/links" ? "selected" : "")
+                }
+                href="/links"
+              >
                 Links
               </Link>
             </p>

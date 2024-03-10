@@ -59,47 +59,37 @@ export default function Projects() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <SiteLayout>
-        <Nav selectedItem="projects" />
-        <div className="line"></div>
-
-        <SiteContent>
-          <div className={styles.projectsContainer}>
-            {projects.map((project, index) => {
-              return (
-                <div key={index} className={styles.project}>
-                  <Link href={project.link} target="_blank" rel="noreferrer">
-                    <div className={styles.imageDiv}>
-                      <Image
-                        src={project.img}
-                        alt={project.imgAlt}
-                        placeholder="blur"
-                        className={styles.projectImage}
-                      />
-                    </div>
-                    <div className={styles.textDiv}>
-                      <h2>{project.name}</h2>
-                      <p>{project.description}</p>
-                      <div className={styles.tagsWrapper}>
-                        {project.tags.map((tag, index) => {
-                          return (
-                            <p key={index} className={styles.tag}>
-                              {tag}
-                            </p>
-                          );
-                        })}
-                      </div>
-                    </div>
-                  </Link>
+      <div className={styles.projectsContainer}>
+        {projects.map((project, index) => {
+          return (
+            <div key={index} className={styles.project}>
+              <Link href={project.link} target="_blank" rel="noreferrer">
+                <div className={styles.imageDiv}>
+                  <Image
+                    src={project.img}
+                    alt={project.imgAlt}
+                    placeholder="blur"
+                    className={styles.projectImage}
+                  />
                 </div>
-              );
-            })}
-          </div>
-        </SiteContent>
-
-        <div className="line"></div>
-        <Footer />
-      </SiteLayout>
+                <div className={styles.textDiv}>
+                  <h2>{project.name}</h2>
+                  <p>{project.description}</p>
+                  <div className={styles.tagsWrapper}>
+                    {project.tags.map((tag, index) => {
+                      return (
+                        <p key={index} className={styles.tag}>
+                          {tag}
+                        </p>
+                      );
+                    })}
+                  </div>
+                </div>
+              </Link>
+            </div>
+          );
+        })}
+      </div>
     </>
   );
 }

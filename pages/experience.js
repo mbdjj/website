@@ -48,33 +48,23 @@ export default function Experience() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <SiteLayout>
-        <Nav selectedItem="experience" />
-        <div className="line"></div>
-
-        <SiteContent>
-          <ol className={styles.experienceList}>
-            {experiences.reverse().map((experience, index) => {
-              return (
-                <li key={index} className={styles.experienceItem}>
-                  <a href={experience.url}>
-                    <h2>{experience.position}</h2>
-                    <p>{experience.place}</p>
-                    <p>
-                      {experience.startDate != experience.endDate
-                        ? `${experience.startDate} - ${experience.endDate}`
-                        : experience.startDate}
-                    </p>
-                  </a>
-                </li>
-              );
-            })}
-          </ol>
-        </SiteContent>
-
-        <div className="line"></div>
-        <Footer />
-      </SiteLayout>
+      <ol className={styles.experienceList}>
+        {experiences.reverse().map((experience, index) => {
+          return (
+            <li key={index} className={styles.experienceItem}>
+              <a href={experience.url}>
+                <h2>{experience.position}</h2>
+                <p>{experience.place}</p>
+                <p>
+                  {experience.startDate != experience.endDate
+                    ? `${experience.startDate} - ${experience.endDate}`
+                    : experience.startDate}
+                </p>
+              </a>
+            </li>
+          );
+        })}
+      </ol>
     </>
   );
 }
