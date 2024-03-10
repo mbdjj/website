@@ -18,7 +18,7 @@
   position: absolute;
   top: 50%;
   left: 0px;
-  background-color: #282c34;
+  background-color: var(--primary);
   width: 16px;
   height: 16px;
   border-radius: 4px;
@@ -40,7 +40,7 @@
   top: calc(50% + 12px);
   left: 8px;
   transform: translateX(-50%);
-  background-color: #282c34;
+  background-color: var(--primary);
   height: calc(100% + 24px);
   width: 2.5px;
   border-radius: 1.25px;
@@ -49,14 +49,4 @@
 
 .experienceItem:last-child::after {
   display: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  .experienceItem::before {
-    background-color: #d5dae5;
-  }
-
-  .experienceItem::after {
-    background-color: #d5dae5;
-  }
 }

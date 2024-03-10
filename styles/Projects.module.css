@@ -8,7 +8,7 @@
 
 .project {
   width: 48%;
-  background-color: #eee;
+  background-color: var(--secondaryBackground);
   padding-bottom: 1rem;
   border-radius: 8px;
 }
@@ -16,7 +16,7 @@
 .imageDiv {
   width: 100%;
   aspect-ratio: 16/10;
-  background-color: #ddd;
+  background-color: var(--background);
   border-radius: 8px;
   margin-bottom: 1rem;
   overflow: hidden;
@@ -41,22 +41,9 @@
 p.tag {
   border-radius: 8px;
   padding: 0 8px;
-  border: 1px solid #282C34;
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
   font-size: 0.85rem;
-}
-
-@media (prefers-color-scheme: dark) {
-  .project {
-    background-color: #1f2228;
-  }
-
-  .imageDiv {
-    background-color: #2a2e36;
-  }
-
-  p.tag {
-    border-color: #d5dae5;
-  }
 }
 
 @media (max-width: 611px) {
