@@ -1,13 +1,13 @@
 import Head from "next/head";
-import styles from "../styles/Projects.module.css";
+import styles from "../../styles/Projects.module.css";
 
 import Link from "next/link";
 import Image from "next/image";
 
-import walutImg from "../public/images/screenshots/walut.png";
-import websiteImg from "../public/images/screenshots/website.png";
-import whenMaturaImg from "../public/images/screenshots/whenMatura.png";
-import walutWebImg from "../public/images/screenshots/walutWeb.png";
+import walutImg from "../../public/images/screenshots/walut.png";
+import websiteImg from "../../public/images/screenshots/website.png";
+import whenMaturaImg from "../../public/images/screenshots/whenMatura.png";
+import walutWebImg from "../../public/images/screenshots/walutWeb.png";
 
 export default function Projects() {
   const projects = [
@@ -16,7 +16,7 @@ export default function Projects() {
       description:
         "App that you can use to check currency rates. Written in SwiftUI.",
       tags: ["iOS App", "SwiftUI", "WidgetKit", "API"],
-      link: "https://github.com/mbdjj/Walut",
+      link: "/projects/walut",
       img: walutImg,
       imgAlt: "Walut app promo image",
     },
@@ -58,7 +58,7 @@ export default function Projects() {
         {projects.map((project, index) => {
           return (
             <div key={index} className={styles.project}>
-              <Link href={project.link} target="_blank" rel="noreferrer">
+              <Link href={project.link}>
                 <div className={styles.imageDiv}>
                   <Image
                     src={project.img}

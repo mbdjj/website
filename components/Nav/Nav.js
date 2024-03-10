@@ -40,10 +40,6 @@ export default function Nav() {
   const captionRef = useRef(null);
 
   useEffect(() => {
-    console.log(pathname);
-  }, [pathname]);
-
-  useEffect(() => {
     setTitle(getTitle());
     if (pathname === "/") {
       captionRef.current.classList.add(styles.animateTitle);
@@ -115,7 +111,7 @@ export default function Nav() {
             <p>
               <Link
                 className={
-                  "navLink " + (pathname === "/projects" ? "selected" : "")
+                  "navLink " + (pathname.includes("/projects") ? "selected" : "")
                 }
                 href="/projects"
               >

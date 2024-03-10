@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "../styles/Experience.module.css";
+import styles from "../../styles/Experience.module.css";
 
 export default function Experience() {
   const schoolEndDate = () => {
