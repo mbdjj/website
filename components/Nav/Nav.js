@@ -25,6 +25,8 @@ function getNavTitle(selected) {
   switch (selected) {
     case "/projects":
       return "My projects";
+    case "/projects/walut":
+      return "Walut";
     case "/experience":
       return "My experience";
     case "/links":
