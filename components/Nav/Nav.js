@@ -39,6 +39,7 @@ function getNavTitle(selected) {
 export default function Nav() {
   const pathname = usePathname();
   const [title, setTitle] = useState("");
+  const [showMenu, setShowMenu] = useState(false);
   const captionRef = useRef(null);
 
   useEffect(() => {
@@ -113,7 +114,8 @@ export default function Nav() {
             <p>
               <Link
                 className={
-                  "navLink " + (pathname.includes("/projects") ? "selected" : "")
+                  "navLink " +
+                  (pathname.includes("/projects") ? "selected" : "")
                 }
                 href="/projects"
               >
@@ -146,6 +148,32 @@ export default function Nav() {
             </p>
           </div>
         </nav>
+        <div className={styles.menuContainer}>
+          <button
+            className={styles.menuButton}
+            onClick={() => {
+              if (showMenu) {
+                setShowMenu(false);
+              } else {
+                setShowMenu(true);
+              }
+            }}
+          >
+            Menu
+          </button>
+          {showMenu ? (
+            <div className={styles.floatingWindow}>
+              <div style={{ display: "flex", flexFlow: "column nowrap" }}>
+                <Link className={(pathname === "/" ? styles.selected : "")} href="/">About me</Link>
+                <Link className={(pathname.includes("/projects") ? styles.selected : "")} href="/projects">Projects</Link>
+                <Link className={(pathname === "/experience" ? styles.selected : "")} href="/experience">Experience</Link>
+                <Link className={(pathname === "/links" ? styles.selected : "")} href="/links">Links</Link>
+              </div>
+            </div>
+          ) : (
+            <></>
+          )}
+        </div>
       </div>
     </div>
   );

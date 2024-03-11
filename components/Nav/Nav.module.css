@@ -12,7 +12,7 @@
   display: flex;
   flex-flow: row nowrap;
   gap: 20px;
-  height: min-content;
+  height: max-content;
   overflow: visible;
   padding: 0px;
   position: relative;
@@ -78,6 +78,58 @@
   justify-content: center;
 }
 
+.menuContainer {
+  display: none;
+}
+
+.menuButton {
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  border: 0;
+  border-radius: 10px;
+  user-select: none;
+  background-color: var(--background);
+  color: var(--primary);
+  transition: background-color 0.2s ease-in-out;
+  font-size: 1rem;
+}
+
+.menuButton:hover {
+  background-color: var(--secondaryBackground);
+}
+
+.floatingWindow {
+  background-color: var(--background);
+  padding: 0.5rem;
+  z-index: 10;
+  position: absolute;
+  margin-top: 0.5rem;
+  right: 0;
+  transform-origin: top right;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.floatingWindow a {
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  border-radius: 10px;
+  user-select: none;
+  color: var(--primary);
+  transition: background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.floatingWindow a:hover {
+  background-color: var(--secondaryBackground);
+}
+
+.floatingWindow a.selected {
+  color: var(--background);
+  background-color: var(--primary);
+}
+
 .animateTitle {
   opacity: 1;
   animation-name: slide;
@@ -93,8 +145,16 @@
 
 @media (max-width: 756px) {
   .navContainer {
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  .menuContainer {
+    display: block;
+  }
+}
+
+@media (max-width: 428px) {
+  .titleDiv {
+    display: none;
   }
 }

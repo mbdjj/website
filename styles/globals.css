@@ -123,7 +123,7 @@ nav {
   display: flex;
   flex: 0 0 auto;
   flex-flow: row wrap;
-  gap: 8px 8px;
+  gap: 8px;
   height: min-content;
   overflow: visible;
   padding: 0;
@@ -159,5 +159,11 @@ footer {
     --secondary: #8f8e94;
     --secondaryBackground: #2c2b2d;
     --blue: #0084ff;
+  }
+}
+
+@media (max-width: 756px) {
+  nav {
+    display: none;
   }
 }
