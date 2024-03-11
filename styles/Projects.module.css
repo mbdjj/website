@@ -1,26 +1,37 @@
 .projectsContainer {
   width: 100%;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column nowrap;
   justify-content: space-between;
   align-items: flex-start;
   gap: 16px;
 }
 
 .project {
-  width: 48%;
+  width: 100%;
   height: min-content;
-  background-color: var(--secondaryBackground);
-  padding-bottom: 1rem;
+  background-color: var(--background);
   border-radius: 8px;
+
+  transition: background-color 0.2s ease-in-out;
+}
+
+.project a {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.project:hover {
+  background-color: var(--secondaryBackground);
 }
 
 .imageDiv {
-  width: 100%;
+  width: 40%;
   aspect-ratio: 16/10;
   background-color: var(--background);
   border-radius: 8px;
-  margin-bottom: 1rem;
   overflow: hidden;
 }
 
@@ -30,26 +41,37 @@
 }
 
 .textDiv {
-  margin: 0 1rem;
-}
-
-.tagsWrapper {
+  margin: 0;
   display: flex;
-  flex-flow: row wrap;
-  gap: 0.5rem 0.5rem;
-  margin-top: 0.5rem;
+  flex-flow: column nowrap;
+  max-width: 60%;
+  padding: 0 16px;
+  box-sizing: border-box;
+  gap: 4px;
 }
 
-p.tag {
-  border-radius: 8px;
-  padding: 0 8px;
+.titleDiv {
+  display: flex;
+  align-items: center;
+}
+
+.secondaryText {
   color: var(--secondary);
-  background-color: var(--background);
-  font-size: 0.85rem;
 }
 
-@media (max-width: 611px) {
-  .project {
+@media (max-width: 640px) {
+  .project a {
+    flex-flow: column nowrap;
+    margin-bottom: 32px;
+  }
+
+  .imageDiv {
     width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .textDiv {
+    max-width: 100%;
+    padding: 0;
   }
 }

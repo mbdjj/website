@@ -15,34 +15,34 @@ export default function Projects() {
       name: "Walut",
       description:
         "App that you can use to check currency rates. Written in SwiftUI.",
-      tags: ["iOS App", "SwiftUI", "WidgetKit", "API"],
       link: "/projects/walut",
       img: walutImg,
       imgAlt: "Walut app promo image",
+      year: 2022,
     },
     {
-      name: "website",
+      name: "Website",
       description: "My personal website.",
-      tags: ["Website", "React", "next.js", "CSS"],
       link: "https://github.com/mbdjj/website",
       img: websiteImg,
       imgAlt: "My personal website promo image",
+      year: 2022,
     },
     {
       name: "Kiedy matura?",
       description: "App to check when is your matura exam.",
-      tags: ["iOS App", "SwiftUI", "WidgetKit"],
       link: "https://github.com/mbdjj/when-matura",
       img: whenMaturaImg,
       imgAlt: "Kiedy matura? app promo image",
+      year: 2023,
     },
     {
       name: "Walut Web",
       description: "Walut but web application.",
-      tags: ["Website", "React", "next.js", "API"],
       link: "https://github.com/mbdjj/Walut-web",
       img: walutWebImg,
       imgAlt: "Walut web promo image",
+      year: 2023,
     },
   ];
 
@@ -68,17 +68,13 @@ export default function Projects() {
                   />
                 </div>
                 <div className={styles.textDiv}>
-                  <h2>{project.name}</h2>
-                  <p>{project.description}</p>
-                  <div className={styles.tagsWrapper}>
-                    {project.tags.map((tag, index) => {
-                      return (
-                        <p key={index} className={styles.tag}>
-                          {tag}
-                        </p>
-                      );
-                    })}
+                  <div className={styles.titleDiv}>
+                    <p>{project.name}</p>
+                    <p className={styles.secondaryText}>
+                      &nbsp;·&nbsp;{project.year}
+                    </p>
                   </div>
+                  <p className={styles.secondaryText}>{project.description}</p>
                 </div>
               </Link>
             </div>
