@@ -150,7 +150,7 @@ export default function Nav() {
         </nav>
         <div className={styles.menuContainer}>
           <button
-            className={styles.menuButton}
+            className={styles.menuButton + " " + (showMenu ? styles.selected : "")}
             onClick={() => {
               if (showMenu) {
                 setShowMenu(false);
