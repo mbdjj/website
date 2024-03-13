@@ -2,9 +2,9 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../../styles/Experience.module.css";
 
-import zskLogo from "../../public/images/logos/zsk.png"
-import srpgjLogo from "../../public/images/logos/srpgj.png"
-import appuniteLogo from "../../public/images/logos/appunite.jpeg"
+import zskLogo from "../../public/images/logos/zsk.png";
+import srpgjLogo from "../../public/images/logos/srpgj.png";
+import appuniteLogo from "../../public/images/logos/appunite.png";
 
 export default function Experience() {
   const schoolEndDate = () => {
@@ -60,7 +60,14 @@ export default function Experience() {
             <li key={index}>
               <a href={experience.url} className={styles.experienceItem}>
                 <div className={styles.leftBlock}>
-                  <Image src={experience.logo} alt={experience.alt} height={50} width={50} className={styles.logo} />
+                  <Image
+                    src={experience.logo}
+                    alt={experience.alt}
+                    placeholder="blur"
+                    height={50}
+                    width={50}
+                    className={styles.logo}
+                  />
                   <div className={styles.textDiv}>
                     <p>{experience.position}</p>
                     <p className={styles.secondary}>{experience.place}</p>
