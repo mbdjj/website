@@ -1,12 +1,17 @@
 import Head from "next/head";
+import Image from "next/image";
 import styles from "../../styles/Experience.module.css";
+
+import zskLogo from "../../public/images/logos/zsk.png"
+import srpgjLogo from "../../public/images/logos/srpgj.png"
+import appuniteLogo from "../../public/images/logos/appunite.jpeg"
 
 export default function Experience() {
   const schoolEndDate = () => {
     const now = new Date();
     const currentTimestamp = now.getTime();
     const schoolEndTimestamp = Date.parse("2024-04-26");
-    return schoolEndTimestamp < currentTimestamp ? "04.2024" : "present";
+    return schoolEndTimestamp < currentTimestamp ? "04.2024" : "";
   };
   const experiences = [
     {
@@ -15,6 +20,8 @@ export default function Experience() {
       startDate: "09.2019",
       endDate: schoolEndDate(),
       url: "https://www.zsk.poznan.pl/",
+      logo: zskLogo,
+      alt: "ZSK logo",
     },
     {
       position: "IT Intern",
@@ -22,6 +29,8 @@ export default function Experience() {
       startDate: "05.2022",
       endDate: "05.2022",
       url: "https://poznan-grunwald.sr.gov.pl/",
+      logo: srpgjLogo,
+      alt: "SRPGJ logo",
     },
     {
       position: "iOS Intern",
@@ -29,6 +38,8 @@ export default function Experience() {
       startDate: "05.2023",
       endDate: "05.2023",
       url: "https://appunite.com",
+      logo: appuniteLogo,
+      alt: "Appunite logo",
     },
   ];
 
@@ -46,15 +57,22 @@ export default function Experience() {
       <ol className={styles.experienceList}>
         {experiences.reverse().map((experience, index) => {
           return (
-            <li key={index} className={styles.experienceItem}>
-              <a href={experience.url}>
-                <h2>{experience.position}</h2>
-                <p>{experience.place}</p>
-                <p>
-                  {experience.startDate != experience.endDate
-                    ? `${experience.startDate} - ${experience.endDate}`
-                    : experience.startDate}
-                </p>
+            <li key={index}>
+              <a href={experience.url} className={styles.experienceItem}>
+                <div className={styles.leftBlock}>
+                  <Image src={experience.logo} alt={experience.alt} height={50} width={50} className={styles.logo} />
+                  <div className={styles.textDiv}>
+                    <p>{experience.position}</p>
+                    <p className={styles.secondary}>{experience.place}</p>
+                  </div>
+                </div>
+                <div className={styles.rightBlock}>
+                  <p className={styles.secondary}>
+                    {experience.startDate != experience.endDate
+                      ? `${experience.startDate}\xA0- ${experience.endDate}`
+                      : experience.startDate}
+                  </p>
+                </div>
               </a>
             </li>
           );
