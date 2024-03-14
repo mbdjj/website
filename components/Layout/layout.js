@@ -38,8 +38,8 @@ export default function Layout({ children }) {
 
         <SiteContent>
           <div>
-            <h1>{titleData[pathname].title}</h1>
-            <p className="caption">{titleData[pathname].caption}</p>
+            <h1>{titleData[pathname]?.title}</h1>
+            <p className="caption">{titleData[pathname]?.caption}</p>
           </div>
           {children}
         </SiteContent>
