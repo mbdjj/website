@@ -8,7 +8,7 @@
   overflow: hidden;
   min-height: 100%;
   width: auto;
-  padding: 80px;
+  padding: 40px 80px;
   position: relative;
 }
 
@@ -18,7 +18,7 @@
   display: flex;
   flex: 0 0 auto;
   flex-flow: column nowrap;
-  gap: 40px;
+  gap: 20px;
   height: min-content;
   max-width: 100%;
   padding: 0px;
@@ -29,18 +29,12 @@
 
 @media (min-width: 810px) and (max-width: 999px) {
   .websiteContainer {
-    padding: 40px;
+    padding: 20px 40px;
   }
 }
 
 @media (max-width: 809px) {
   .websiteContainer {
     padding: 20px;
-  }
-}
-
-@media (max-width: 756px) {
-  .contentContainer {
-    gap: 20px;
   }
 }

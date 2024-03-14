@@ -68,11 +68,8 @@ p {
 }
 
 p.caption {
-  font-size: 14px;
   line-height: 1em;
   color: var(--secondary);
-  cursor: pointer;
-  user-select: none;
   opacity: 1;
 }
 
@@ -166,7 +163,7 @@ li {
   }
 }
 
-@media (max-width: 756px) {
+@media (max-width: 535px) {
   nav {
     display: none;
   }
