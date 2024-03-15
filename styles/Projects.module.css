@@ -7,13 +7,17 @@
   gap: 16px;
 }
 
+.projectsContainer:hover .project {
+  opacity: 0.6;
+}
+
 .project {
   width: 100%;
   height: min-content;
   background-color: var(--background);
   border-radius: 8px;
 
-  transition: background-color 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .project a {
@@ -23,8 +27,8 @@
   align-items: flex-start;
 }
 
-.project:hover {
-  background-color: var(--secondaryBackground);
+.projectsContainer:hover .project:hover {
+  opacity: 1;
 }
 
 .imageDiv {

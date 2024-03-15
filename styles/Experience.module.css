@@ -10,6 +10,10 @@
   padding: 0;
 }
 
+.experienceList:hover .experienceItem {
+  opacity: 0.6;
+}
+
 .experienceItem {
   width: 100%;
   display: flex;
@@ -18,11 +22,11 @@
   padding: 8px;
   border-radius: 8px;
 
-  transition: background-color 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
 
-.experienceItem:hover {
-  background-color: var(--secondaryBackground);
+.experienceList:hover .experienceItem:hover {
+  opacity: 1;
 }
 
 .leftBlock {
