@@ -21,12 +21,12 @@ export default function Links() {
       textColor: "#111111",
     },
     {
-      service: "Threads",
-      url: "https://threads.net/bartmisnki",
-      nickname: "@bartmisnki",
-      description: "My personal diary.",
-      backgroundColor: "#000000",
-      textColor: "#ffffff",
+      service: "E-mail",
+      url: "mailto:marcin@bartminski.dev",
+      nickname: "marcin@bartminski.dev",
+      description: "My proffesional e-mail.",
+      backgroundColor: "#f6f6f6",
+      textColor: "#0084ff",
     },
     {
       service: "LinkedIn",
@@ -58,14 +58,6 @@ export default function Links() {
       nickname: "@bartmisnki",
       description: "Where I listen to music.",
       backgroundColor: "#fc3c44",
-      textColor: "#ffffff",
-    },
-    {
-      service: "Instagram",
-      url: "https://www.instagram.com/bartmisnki/",
-      nickname: "@bartmisnki",
-      description: "Photos of me.",
-      backgroundColor: "#e1306c",
       textColor: "#ffffff",
     },
   ];
