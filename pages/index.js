@@ -39,7 +39,7 @@ export default function Home() {
         />
       </div>
       <p>
-        Hello! I'm Marcin, {getArticle(age)} {age} year old iOS Developer and IT
+        Hello! I&apos;m Marcin, {getArticle(age)} {age} year old iOS Developer and IT
         student. In addition to coding, I also train calisthenics and play video
         games.
       </p>
