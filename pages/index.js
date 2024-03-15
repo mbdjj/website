@@ -1,8 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
-import marcinPhoto from "../public/images/pfp.jpeg";
-import Tilt from "react-parallax-tilt";
+import marcinPhoto from "../public/images/pfp.png";
 
 function getAge() {
   const today = new Date();
@@ -29,33 +28,20 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
+      <div>
+        <Image
+          src={marcinPhoto}
+          alt="Marcin in suit"
+          height={100}
+          width={100}
+          className={styles.photoImage}
+          placeholder="blur"
+        />
+      </div>
       <p>
-        Hello! 👋 <br />
-        I&apos;m Marcin, {getArticle(age)} {age} year old iOS Developer and IT
-        student. In my free time I play video games, code, and train
-        calisthenics. You can follow me on{" "}
-        <a
-          className="inlineLink"
-          href="https://threads.net/bartmisnki"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Threads
-        </a>
-        , check out my projects on{" "}
-        <a
-          className="inlineLink"
-          href="https://github.com/mbdjj"
-          target="_blank"
-          rel="noreferrer"
-        >
-          GitHub
-        </a>
-        , or send me an{" "}
-        <a className="inlineLink" href="mailto:marcin@bartminski.dev">
-          Email
-        </a>
-        .
+        Hello! I'm Marcin, {getArticle(age)} {age} year old iOS Developer and IT
+        student. In addition to coding, I also train calisthenics and play video
+        games.
       </p>
     </>
   );
