@@ -25,10 +25,12 @@
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: flex-start;
+  text-decoration: inherit;
 }
 
 .projectsContainer:hover .project:hover {
   opacity: 1;
+  text-decoration: none;
 }
 
 .imageDiv {

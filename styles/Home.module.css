@@ -1,3 +1,19 @@
 .photoImage {
   border-radius: 50px;
 }
+
+.introductionContainer {
+  display: flex;
+  gap: 16px;
+}
+
+.introductionRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4px 0;
+}
+
+.introductionRight a {
+  width: max-content;
+}

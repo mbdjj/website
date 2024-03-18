@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
 import marcinPhoto from "../public/images/pfp.png";
+import Link from "next/link";
 
 function getAge() {
   const today = new Date();
@@ -28,7 +29,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <div>
+      <div className={styles.introductionContainer}>
         <Image
           src={marcinPhoto}
           alt="Marcin in suit"
@@ -37,12 +38,15 @@ export default function Home() {
           className={styles.photoImage}
           placeholder="blur"
         />
+        <div className={styles.introductionRight}>
+          <p>
+            Hello! I&apos;m Marcin, {getArticle(age)} {age} year old iOS
+            Developer and IT student. In addition to coding, I also train
+            calisthenics and play video games.
+          </p>
+          <Link href={"mailto:marcin@bartminski.dev"}>E-mail me</Link>
+        </div>
       </div>
-      <p>
-        Hello! I&apos;m Marcin, {getArticle(age)} {age} year old iOS Developer and IT
-        student. In addition to coding, I also train calisthenics and play video
-        games.
-      </p>
     </>
   );
 }

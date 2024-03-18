@@ -28,6 +28,7 @@
 
 .linksContainer:hover .link:hover {
   opacity: 1;
+  text-decoration: none;
 }
 
 @media (max-width: 611px) {

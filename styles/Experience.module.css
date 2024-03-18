@@ -27,6 +27,7 @@
 
 .experienceList:hover .experienceItem:hover {
   opacity: 1;
+  text-decoration: none;
 }
 
 .leftBlock {
