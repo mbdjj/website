@@ -129,6 +129,7 @@
 
 .floatingWindow a:hover {
   background-color: var(--secondaryBackground);
+  text-decoration: none;
 }
 
 .floatingWindow a.selected {
