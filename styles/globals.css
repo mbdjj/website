@@ -75,6 +75,7 @@ p.caption {
 
 a {
   text-decoration: none;
+  color: var(--blue);
 }
 
 a:hover {
