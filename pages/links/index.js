@@ -24,7 +24,7 @@ export default function Links() {
       service: "E-mail",
       url: "mailto:marcin@bartminski.dev",
       nickname: "marcin@bartminski.dev",
-      description: "My proffesional e-mail.",
+      description: "My professional e-mail.",
       backgroundColor: "#f6f6f6",
       textColor: "#0084ff",
     },
