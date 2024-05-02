@@ -7,18 +7,12 @@ import srpgjLogo from "../../public/images/logos/srpgj.png";
 import appuniteLogo from "../../public/images/logos/appunite.png";
 
 export default function Experience() {
-  const schoolEndDate = () => {
-    const now = new Date();
-    const currentTimestamp = now.getTime();
-    const schoolEndTimestamp = Date.parse("2024-04-26");
-    return schoolEndTimestamp < currentTimestamp ? "04.2024" : "";
-  };
   const experiences = [
     {
       position: "Bilingual IT Student",
       place: "Zespół Szkół Komunikacji w Poznaniu",
       startDate: "09.2019",
-      endDate: schoolEndDate(),
+      endDate: "04.2024",
       url: "https://www.zsk.poznan.pl/",
       logo: zskLogo,
       alt: "ZSK logo",

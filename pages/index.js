@@ -41,7 +41,7 @@ export default function Home() {
         <div className={styles.introductionRight}>
           <p>
             Hello! I&apos;m Marcin, {getArticle(age)} {age} year old iOS
-            Developer and IT student. In addition to coding, I also train
+            Developer. In addition to coding, I also train
             calisthenics and play video games.
           </p>
           <Link href={"mailto:marcin@bartminski.dev"}>E-mail me</Link>
