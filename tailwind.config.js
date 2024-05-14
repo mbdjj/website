@@ -6,7 +6,14 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    
+    extend: {
+      keyframes: {
+        blink: {
+          '0%, 49%, 100%': { opacity: '100%' },
+          '50%, 99%': { opacity: "5%" }
+        }
+      }
+    }
   },
   plugins: [],
 };
