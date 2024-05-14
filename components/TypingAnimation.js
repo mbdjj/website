@@ -56,7 +56,7 @@ export default function TypingAnimation({ texts }) {
   return (
     <div className="flex">
       <span className="inline-block overflow-hidden">{typedText}</span>
-      <div className={`h-12 w-1 bg-blue-900 dark:bg-blue-100 ${waiting ? "animate-[blink_1.5s_ease-in-out_infinite]" : ""}`} />
+      <div className={`h-8 sm:h-12 w-1 bg-blue-900 dark:bg-blue-100 ${waiting ? "animate-[blink_1.5s_ease-in-out_infinite]" : ""}`} />
     </div>
   )
 }
