@@ -21,7 +21,7 @@ export default function Home() {
             <h1 className="text-3xl sm:text-6xl font-bold text-blue-950 dark:text-blue-50">
               Marcin Bartmiński
             </h1>
-            <h2 className="text-2xl sm:text-5xl text-blue-900 dark:text-blue-100 h-12">
+            <h2 className="text-2xl sm:text-5xl text-blue-900 dark:text-blue-100 h-8 sm:h-14">
               <TypingAnimation texts={texts} />
             </h2>
           </div>
