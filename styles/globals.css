@@ -7,3 +7,12 @@
     @apply bg-blue-200 dark:bg-blue-900
   }
 }
+
+@layer utilities {
+  .event-open {
+    @apply flex mt-[-1rem] w-max h-min rounded-lg;
+  }
+  .event-open * {
+    @apply opacity-100
+  }
+}

@@ -9,11 +9,11 @@ module.exports = {
     extend: {
       keyframes: {
         blink: {
-          '0%, 49%, 100%': { opacity: '100%' },
-          '50%, 99%': { opacity: "5%" }
-        }
-      }
-    }
+          "0%, 49%, 100%": { opacity: "100%" },
+          "50%, 99%": { opacity: "5%" },
+        },
+      },
+    },
   },
   plugins: [],
 };
