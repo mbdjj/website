@@ -10,7 +10,7 @@
 
 @layer utilities {
   .event-open {
-    @apply flex mt-[-1rem] w-max h-min rounded-lg;
+    @apply flex mt-[-1rem] w-max h-max rounded-lg;
   }
   .event-open * {
     @apply opacity-100
